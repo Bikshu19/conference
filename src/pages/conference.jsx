@@ -1,8 +1,13 @@
 import React from 'react'
+import Important from '../components/Important'
+import TimeLine from '../components/TimeLine'
 
 function Conference() {
   return (
-    <div>Conference</div>
+    <div>
+      <TimeLine/>
+      <Important/>
+    </div>
   )
 }
 
