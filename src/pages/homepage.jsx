@@ -1,0 +1,22 @@
+import React from 'react'
+import HomepageComponents from '../components/homepagecomponents/homeimage'
+import Homenav from '../components/homepagecomponents/homenav';
+import Homeorg from '../components/homepagecomponents/homeorg';
+import Homepageobj from '../components/homepagecomponents/homepageobj';
+import Homefooter from '../components/homepagecomponents/homefooter';
+import Homepageconference from '../components/homepagecomponents/homepageconference';
+
+function Homepage() {
+  return (
+    <div>
+        <Homenav />
+        <HomepageComponents />
+        <Homeorg />
+        <Homepageobj />
+        <Homepageconference />
+        <Homefooter />
+    </div>
+  )
+}
+
+export default Homepage
