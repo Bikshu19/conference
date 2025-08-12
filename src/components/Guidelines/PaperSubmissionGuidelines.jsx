@@ -25,8 +25,8 @@ const PaperSubmissionGuidelines = () => {
             <div className="rounded-lg p-4 w-full text-gray-700 text-lg font-medium hover:bg-gray-50 transition text-center">
               {step.includes("Click here") ? (
                 <>
-                  Maximum number of pages: <strong>8</strong> (8.25 × 11 inch paper, single-column template).{" "}
-                  Paper format:{" "}
+                  Maximum number of pages: <strong>8</strong> (8.25 × 11 inch
+                  paper, single-column template). Paper format:{" "}
                   <a
                     href="https://shorturl.at/JzGmG"
                     target="_blank"

@@ -3,15 +3,15 @@ import React from "react";
 const surroundingsData = [
   {
     title: "NRI Institute of Technology Main Gate",
-    imgUrl: "/College Main Road.jpg",
+    imgUrl: "/Location/College Main Road.jpg",
   },
   {
     title: "College Campus",
-    imgUrl: "/College Campus.jpg",
+    imgUrl: "/Location/College Campus.jpg",
   },
   {
     title: "College Front View",
-    imgUrl: "/College Front View.jpg",
+    imgUrl: "/Location/College Front View.jpg",
   },
 ];
 
