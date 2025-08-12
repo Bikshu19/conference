@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from 'react-router-dom';
 
 function Homenav() {
   return (
@@ -14,9 +15,9 @@ function Homenav() {
       }}
     >
       <div className="container-fluid">
-        <a className="navbar-brand text-white" href="#">
+        <Link className="navbar-brand text-white" to="/">
           <img src='./logo.png' style={{'width':'150px'}}/>
-        </a>
+        </Link>
        <button
   className="navbar-toggler"
   type="button"
@@ -58,19 +59,19 @@ function Homenav() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#" style={{"color":"#141E46"}}>
+                  <Link className="dropdown-item" to='/location' style={{"color":"#141E46"}}>
                     Location
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to='/conference' style={{"color":"#141E46"}}>
                     Conference Committe
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/award">
                     Awards,Gallery
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -95,9 +96,9 @@ function Homenav() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to="/authorguidelines">
                     Author Guidelines
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
@@ -122,31 +123,36 @@ function Homenav() {
               </a>
               <ul className="dropdown-menu">
                 <li>
-                  <a className="dropdown-item" href="#">
-                    About Organizations
-                  </a>
+                  <Link className="dropdown-item" to='/aboutnri'>
+                    About NRIIT
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to='/aboutpb'>
+                    About PB
+                  </Link>
+                </li>
+                <li>
+                  <Link className="dropdown-item" to='/aboutcon'>
                     About Conference
-                  </a>
+                  </Link>
                 </li>
                 <li>
-                  <a className="dropdown-item" href="#">
+                  <Link className="dropdown-item" to='/aboutvij'>
                     About Vijayawada
-                  </a>
+                  </Link>
                 </li>
               </ul>
             </li>
             <li className="nav-item me-4">
-              <a className="nav-link active text-white" aria-current="page" href="#">
+              <Link className="nav-link active text-white" aria-current="page" to='/registration'>
                 <span style={{"color":"#141E46","fontWeight":"900"}}>Registration</span>
-              </a>
+              </Link>
             </li>
 <li className="nav-item me-4">
-              <a className="nav-link active text-white" aria-current="page" href="#">
+              <Link className="nav-link active text-white" aria-current="page" to='/contact'>
                 <span style={{"color":"#141E46","fontWeight":"900"}}>Contact</span>
-              </a>
+              </Link>
             </li>
 
           </ul>
