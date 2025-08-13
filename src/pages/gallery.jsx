@@ -1,12 +1,14 @@
 import React from "react";
 import Homenav from "../components/homepagecomponents/homenav";
 import Footer from "../components/homepagecomponents/homefooter";
-import Ga from "../components/NriGallery";
+import Gal from "../components/Gallery";
 function Gallery() {
   return (
     <div>
       <Homenav />
-      <Ga />
+      <div style={{ margin: "120px" }}>
+        <Gal />
+      </div>
       <Footer />
     </div>
   );
