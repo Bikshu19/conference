@@ -13,7 +13,9 @@ function Homepage() {
       <ScrollToTop />
       <Homenav />
       <HomepageComponents />
-      <Homeorg />
+      <div style={{ margin: "50px" }}>
+        <Homeorg />
+      </div>
       <Homepageobj />
       <Homepageconference />
       <Homefooter />
