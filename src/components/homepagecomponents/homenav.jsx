@@ -91,7 +91,17 @@ function Homenav() {
                     style={getLinkStyle("award")}
                     onClick={() => handleClick("award")}
                   >
-                    Awards, Gallery
+                    Awards
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/gallery"
+                    style={getLinkStyle("gallery")}
+                    onClick={() => handleClick("gallery")}
+                  >
+                    Gallery
                   </Link>
                 </li>
               </ul>

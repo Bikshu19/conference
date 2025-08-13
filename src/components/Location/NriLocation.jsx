@@ -14,8 +14,6 @@ const NriLocation = () => {
 
   return (
     <div className="location-root">
-      <h1 className="venue-title">Venue</h1>
-
       <div className="location-inner">
         {/* LEFT: Address text + Boy pulling cart */}
         <div
@@ -23,12 +21,12 @@ const NriLocation = () => {
           style={{ flexDirection: "column", alignItems: "center" }}
         >
           {/* Address Section in white space */}
-          <div style={{ marginBottom: "20px", textAlign: "center" }}>
+          <div style={{ marginBottom: "100px", textAlign: "center" }}>
             <h2
               style={{
                 fontSize: "30px",
                 fontWeight: "700",
-                marginBottom: "12px",
+                marginBottom: "110px",
                 color: "#1b1b1b",
               }}
             >
@@ -40,7 +38,7 @@ const NriLocation = () => {
                 style={{
                   fontSize: "20px",
                   fontWeight: "500",
-                  color: "#333",
+                  color: "rgba(48, 47, 47, 1)",
                   lineHeight: "1.6",
                 }}
               >
@@ -154,7 +152,7 @@ const NriLocation = () => {
           background: rgba(255,255,255,0.95);
           padding: 10px 18px;
           border-radius: 10px;
-          box-shadow: 0 6px 18px rgba(31,45,61,0.12);
+          box-shadow: 0 6px 18px rgba(253, 254, 255, 0.12);
           font-size: 22px;
           font-weight: 700;
         }
@@ -215,7 +213,7 @@ const NriLocation = () => {
         .wheel {
           width: 26px;
           height: 26px;
-          background: radial-gradient(circle at 40% 30%, #888, #222);
+          background: radial-gradient(circle at 40% 30%, #ffffffff, #222);
           border-radius: 50%;
           position: absolute;
           bottom: -14px;

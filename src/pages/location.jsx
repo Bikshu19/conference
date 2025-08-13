@@ -9,9 +9,11 @@ function Location() {
   return (
     <div>
       <Homenav />
-      <NriLocation />
-      <Surroundings />
-      <CustomerCare />
+      <div style={{ marginTop: "120px" }}>
+        <NriLocation />
+        <Surroundings />
+        <CustomerCare />
+      </div>
       <Footer />
     </div>
   );

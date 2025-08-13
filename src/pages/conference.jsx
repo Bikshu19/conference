@@ -8,8 +8,10 @@ function Conference() {
   return (
     <div>
       <Homenav />
-      <TimeLine />
-      <Important />
+      <div style={{ marginTop: "120px" }}>
+        <TimeLine />
+        <Important />
+      </div>
       <Footer />
     </div>
   );
