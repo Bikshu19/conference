@@ -9,8 +9,13 @@ function Award() {
     <div>
       <ScrollToTop />
       <Homenav />
+<<<<<<< HEAD
       <div style={{ margin: "120px" }}>
         <Awards />
+=======
+      <div style={{"margin":"120px"}}>
+        <Awards/>
+>>>>>>> 5b946ebef2cc610f7058d45e19aa4c46c6a561ef
       </div>
       <Footer />
     </div>
