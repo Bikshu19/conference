@@ -8,8 +8,8 @@ function Aboutvij() {
     <div>
       <ScrollToTop />
       <Homenav />
-      <div style={{"margin":"60px"}}>
-<Aboutvijj/>
+      <div style={{ margin: "60px" }}>
+        <Aboutvijj />
       </div>
       <Footer />
     </div>
