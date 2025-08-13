@@ -1,7 +1,19 @@
-import React from "react";
+import React, { useState } from "react";
 import { Link } from "react-router-dom";
 
 function Homenav() {
+  const [activeButton, setActiveButton] = useState(null);
+
+  const handleClick = (name) => {
+    setActiveButton(name);
+  };
+
+  const getLinkStyle = (name) => ({
+    color: activeButton === name ? "#141E46" : "#292626ff",
+    fontWeight: "900",
+    cursor: "pointer",
+  });
+
   return (
     <nav
       className="navbar navbar-expand-lg p-4"
@@ -15,59 +27,49 @@ function Homenav() {
       }}
     >
       <div className="container-fluid">
+        {/* Logo */}
         <Link className="navbar-brand text-white" to="/">
-          <img src="./logo-1.png" style={{ width: "150px" }} />
+          <img src="./logo-1.png" style={{ width: "150px" }} alt="Logo" />
         </Link>
+
+        {/* Toggler */}
         <button
           className="navbar-toggler"
           type="button"
           data-bs-toggle="collapse"
           data-bs-target="#navbarSupportedContent"
-          aria-controls="navbarSupportedContent"
-          aria-expanded="false"
-          aria-label="Toggle navigation" // white border
         >
           <span
             className="navbar-toggler-icon"
-            style={{
-              filter: "invert(1) brightness(2)", // makes icon white
-            }}
+            style={{ filter: "invert(1) brightness(2)" }}
           />
         </button>
 
+        {/* Menu */}
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
-            className="navbar-nav me-auto mb-2 mb-lg-0 "
-            style={{ color: "#141E46" }}
+            className="navbar-nav mx-auto mb-2 mb-lg-0"
+            style={{ textAlign: "center" }}
           >
-            {/* Dropdown with custom ▾ arrow */}
+            {/* Conference Info */}
             <li className="nav-item dropdown me-4">
               <a
-                className="nav-link text-white"
+                className="nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+                style={getLinkStyle("conference")}
+                onClick={() => handleClick("conference")}
               >
-                <span style={{ fontWeight: "900", color: "#141E46" }}>
-                  Conference Info
-                </span>
-                <span
-                  style={{
-                    color: "#141E46",
-                    marginLeft: "5px",
-                    fontSize: "14px",
-                  }}
-                >
-                  ▾
-                </span>
+                Conference Info ▾
               </a>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu text-center">
                 <li>
                   <Link
                     className="dropdown-item"
                     to="/location"
-                    style={{ color: "#141E46" }}
+                    style={getLinkStyle("location")}
+                    onClick={() => handleClick("location")}
                   >
                     Location
                   </Link>
@@ -76,109 +78,128 @@ function Homenav() {
                   <Link
                     className="dropdown-item"
                     to="/conference"
-                    style={{ color: "#141E46" }}
+                    style={getLinkStyle("committee")}
+                    onClick={() => handleClick("committee")}
                   >
-                    Conference Committe
+                    Conference Committee
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/award">
-                    Awards,Gallery
+                  <Link
+                    className="dropdown-item"
+                    to="/award"
+                    style={getLinkStyle("award")}
+                    onClick={() => handleClick("award")}
+                  >
+                    Awards, Gallery
                   </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Submissions */}
             <li className="nav-item dropdown me-4">
               <a
-                className="nav-link text-white"
+                className="nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+                style={getLinkStyle("submissions")}
+                onClick={() => handleClick("submissions")}
               >
-                <span style={{ fontWeight: 900, color: "#141E46" }}>
-                  Submissions
-                </span>
-                <span
-                  style={{
-                    color: "#141E46",
-                    marginLeft: "5px",
-                    fontSize: "14px",
-                  }}
-                >
-                  ▾
-                </span>
+                Submissions ▾
               </a>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu text-center">
                 <li>
-                  <Link className="dropdown-item" to="/authorguidelines">
+                  <Link
+                    className="dropdown-item"
+                    to="/authorguidelines"
+                    style={getLinkStyle("guidelines")}
+                    onClick={() => handleClick("guidelines")}
+                  >
                     Author Guidelines
                   </Link>
                 </li>
               </ul>
             </li>
+
+            {/* About */}
             <li className="nav-item dropdown me-4">
               <a
-                className="nav-link text-white"
+                className="nav-link"
                 href="#"
                 role="button"
                 data-bs-toggle="dropdown"
-                aria-expanded="false"
+                style={getLinkStyle("about")}
+                onClick={() => handleClick("about")}
               >
-                <span style={{ fontWeight: 900, color: "#141E46" }}>About</span>
-                <span
-                  style={{
-                    color: "#141E46",
-                    marginLeft: "5px",
-                    fontSize: "14px",
-                  }}
-                >
-                  ▾
-                </span>
+                About ▾
               </a>
-              <ul className="dropdown-menu">
+              <ul className="dropdown-menu text-center">
                 <li>
-                  <Link className="dropdown-item" to="/aboutnri">
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutnri"
+                    style={getLinkStyle("aboutnri")}
+                    onClick={() => handleClick("aboutnri")}
+                  >
                     About NRIIT
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/aboutpb">
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutpb"
+                    style={getLinkStyle("aboutpb")}
+                    onClick={() => handleClick("aboutpb")}
+                  >
                     About PB
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/aboutcon">
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutcon"
+                    style={getLinkStyle("aboutcon")}
+                    onClick={() => handleClick("aboutcon")}
+                  >
                     About Conference
                   </Link>
                 </li>
                 <li>
-                  <Link className="dropdown-item" to="/aboutvij">
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutvij"
+                    style={getLinkStyle("aboutvij")}
+                    onClick={() => handleClick("aboutvij")}
+                  >
                     About Vijayawada
                   </Link>
                 </li>
               </ul>
             </li>
+
+            {/* Registration */}
             <li className="nav-item me-4">
               <Link
-                className="nav-link active text-white"
-                aria-current="page"
+                className="nav-link"
                 to="/registration"
+                style={getLinkStyle("registration")}
+                onClick={() => handleClick("registration")}
               >
-                <span style={{ color: "#141E46", fontWeight: "900" }}>
-                  Registration
-                </span>
+                Registration
               </Link>
             </li>
+
+            {/* Contact */}
             <li className="nav-item me-4">
               <Link
-                className="nav-link active text-white"
-                aria-current="page"
+                className="nav-link"
                 to="/contact"
+                style={getLinkStyle("contact")}
+                onClick={() => handleClick("contact")}
               >
-                <span style={{ color: "#141E46", fontWeight: "900" }}>
-                  Contact
-                </span>
+                Contact
               </Link>
             </li>
           </ul>

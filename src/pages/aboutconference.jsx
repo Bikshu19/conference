@@ -3,10 +3,12 @@ import Homenav from "../components/homepagecomponents/homenav";
 import Footer from "../components/homepagecomponents/homefooter";
 
 function Aboutcon() {
-  return <div>
-    <Homenav />
-    <Footer />
-  </div>;
+  return (
+    <div>
+      <Homenav />
+      <Footer />
+    </div>
+  );
 }
 
 export default Aboutcon;
