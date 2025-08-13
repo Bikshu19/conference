@@ -20,15 +20,15 @@ const dataEN = {
     "Chief Patrons",
     "Patrons",
     "General Chair",
-    "Convener & Co-Convener"
+    "Convener & Co-Convener",
   ],
   chiefPatrons: [
     "Dr R Venkat Rao, Chairman, NRI Institute of Technology (NRIIT), Agiripalli, Vijayawada",
-    "Prof Gutta Sambasivarao, Director (Academics), NRIIT"
+    "Prof Gutta Sambasivarao, Director (Academics), NRIIT",
   ],
   patrons: [
     "Dr G Naga Bhaskar, Principal, NRIIT",
-    "Dr M Ramesh, Principal, PB Siddhartha College of Arts & Science (PBSc), Vijayawada"
+    "Dr M Ramesh, Principal, PB Siddhartha College of Arts & Science (PBSc), Vijayawada",
   ],
   generalChair: ["Dr K V Sambasiva Rao, Professor & Dean, CSE, NRIIT (Chair)"],
   convener: ["Dr D Sunitha, HOD : CSE, NRIIT"],
@@ -50,10 +50,10 @@ const dataEN = {
     "Dr. Manisha Bharti,Associate Professor,NIT Delhi",
     "Mr. Uma Desu,GenAI Specialist,IntelliIndia,Hyderabad",
     "Mr. Sai Satish Damaraju,Founder and CEO,Indian Servers,Vijayawada",
-    "Mr. Abhishek Dojjode,Cheif Talent Officer,Virtusa",/* …same as before… */
+    "Mr. Abhishek Dojjode,Cheif Talent Officer,Virtusa" /* …same as before… */,
     "Mr. K. Sudhir,PBSc,Vijayawada",
     "Dr. B. Madhavarao,Professor,Sir C R Reddy College of Engineering,Eluru",
-    "Prof. V. Ch. Venkaiah,School of Computer Scince,University of Hyderabad"
+    "Prof. V. Ch. Venkaiah,School of Computer Scince,University of Hyderabad",
   ],
   internationalAdvisory: [
     "Srikanth Bellamkonda,Assistant Vice President | Networks & Security,Barclays Services Corp,New Jersey,USA(Chair)",
@@ -75,7 +75,7 @@ const dataEN = {
     "Chinmay Jain,Group Product Manager,Waymo,CA,USA",
     "Priya Yesare,Principal SQA Engineer,Asurion, 1101 Church St,Nashville, TN 37203,USA",
     "Dr. Mounica Yenugula,Sr. Cloud Services Engineer,Equifax,Atlanta,Georgia",
-    "Ruthvik Uppaluri,Manager,FP&A Systems,University of Missouri at Kansas City,MO,NC,USA"
+    "Ruthvik Uppaluri,Manager,FP&A Systems,University of Missouri at Kansas City,MO,NC,USA",
   ],
   nationalAdvisory: [
     "Dr Ch V Murali Krishna, HOD CS-DSc., NRIIT (Chair)",
@@ -104,7 +104,7 @@ const dataEN = {
     "Dr. T. Manasa Veena,AIML,NRIIT",
     "Dr. B. Kondalu,Prof., AIML",
     "Dr. K. Gayatri,Associate Prof.,AIML,NRIIT",
-    "Prof. V. Teju,CS-AIML,NRIIT"
+    "Prof. V. Teju,CS-AIML,NRIIT",
   ],
   editorial: [
     "Dr. D. Sunitha,HOD:CSE,NRIIT(Chair)",
@@ -113,7 +113,7 @@ const dataEN = {
     "Dr. Bb. Dasaradh Ram,HOD:CS-AIML,NRIIT",
     "Dr. P. Rajendra Kumar,HOD:AIML,NRIIT",
     "Prof. V.V. Subrahmanyam Director & ProfessorSchool of Computer and Information Sciences(SOCIS) IGNOU,New Delh",
-    "Dr. Shonak Bansal,Associate professor,Chandigarh University"
+    "Dr. Shonak Bansal,Associate professor,Chandigarh University",
   ],
   paperReview: [
     "Dr. K. V. Sambasiva Rao,Dean,CSE,NRIIT(Chair)",
@@ -122,8 +122,8 @@ const dataEN = {
     "Mr. G. Samrat Krishna,Asst.Prof.,PBSc,Vijayawada",
     "Dr. Dakshina Ranjan Kisku,Associate Professor, NITDurgapur,CSE, Durgapur - 713209,West Bengal",
     "Dr. P. Durga,CSE,NRIIT",
-    "Prof. J. Chaitanya,CS-DSc,NRIIT"
-  ]
+    "Prof. J. Chaitanya,CS-DSc,NRIIT",
+  ],
 };
 
 // TELUGU DATA
@@ -144,24 +144,22 @@ const dataTE = {
     "Chief Patrons",
     "Patrons",
     "General Chair",
-    "Convener & Co-Convener"
+    "Convener & Co-Convener",
   ],
   chiefPatrons: [
     "Dr. R. వెంకటరావు, ఛైర్మన్, ఎన్ఆరఐ ఇన్స్టిట్యూట్ ఆఫ్ టెక్నాలజీ (ఎన్ఆరఐఐటీ), అగిరిపల్లి, విజయవాడ",
-    "Prof. Gutta. సాంబశివరావు, డైరెక్టర్ (అకాడెమిక్స్), ఎన్ఆరఐఐటీ"
+    "Prof. Gutta. సాంబశివరావు, డైరెక్టర్ (అకాడెమిక్స్), ఎన్ఆరఐఐటీ",
   ],
   patrons: [
     "డా.   నాగ భాస్కర్, ప్రిన్సిపాల్, ఎన్ఆరఐఐటీ",
-    "డా. ఎం. రమేష్, ప్రిన్సిపాల్, పీబీ ఎస్క్, విజయవాడ"
+    "డా. ఎం. రమేష్, ప్రిన్సిపాల్, పీబీ ఎస్క్, విజయవాడ",
   ],
   generalChair: [
-    "డా. కె. వి. సాంబశివరావు, ప్రొఫెసర్ & డీన్, సిఎస్ఈ, ఎన్ఆరఐఐటీ (చైర్)"
+    "డా. కె. వి. సాంబశివరావు, ప్రొఫెసర్ & డీన్, సిఎస్ఈ, ఎన్ఆరఐఐటీ (చైర్)",
   ],
-  convener: [
-    "డా. డి. సునీత, హెచ్‌ఓడీ: సిఎస్ఈ, ఎన్ఆరఐఐటీ"
-  ],
+  convener: ["డా. డి. సునీత, హెచ్‌ఓడీ: సిఎస్ఈ, ఎన్ఆరఐఐటీ"],
   coConvener: [
-    "డా. టి. ఎస్. రవి కిరణ్, హెచ్‌ఓడీ & అసోసియేట్ ప్రొఫెసర్, పీబీ ఎస్క్"
+    "డా. టి. ఎస్. రవి కిరణ్, హెచ్‌ఓడీ & అసోసియేట్ ప్రొఫెసర్, పీబీ ఎస్క్",
   ],
   technicalProgram: [
     "డా. డి. సునీత, ప్రొఫెసర్ & హెచ్‌ఓడీ: సిఎస్ఈ (చైర్)",
@@ -183,7 +181,7 @@ const dataTE = {
     "శ్రీ అభిషేక్ దోజ్జోడే, చీఫ్ టాలెంట్ ఆఫీసర్, Virtusa",
     "శ్రీ కే. సుధీర్, PBSc, విజయవాడ",
     "డా. బీ. మధవరావు, ప్రొఫెసర్, సర్ సి ఆర్ రెడ్డి ఇంజినీరింగ్ కాలేజీ, ఏలూరు",
-    "ప్రో. వి. చి. వెంకయ్య, కంప్యూతర్ సైన్స్ స్కూల్, హైదరాబాద్ యూనివర్శిటీ"
+    "ప్రో. వి. చి. వెంకయ్య, కంప్యూతర్ సైన్స్ స్కూల్, హైదరాబాద్ యూనివర్శిటీ",
   ],
   internationalAdvisory: [
     "శ్రీకాంత్ బెల్లంకొండ, అసిస్టెంట్ వైస్ ప్రెసిడెంట్ | నెట్‌వర్క్స్ & సెక్యూరిటీ, బార్క్లేస్ సర్వీసెస్ కార్ప్, న్యూజెర్సీ, USA (చైర్)",
@@ -205,7 +203,7 @@ const dataTE = {
     "చిన్మయ్ జైన్, గ్రూప్ ప్రోడక్ట్ మేనేజర్, వేమో, CA, USA",
     "ప్రియ యేసారే, ప్రిన్సిపల్ SQA ఇంజనీర్, అసురియన్, నాష్విల్లే, TN, USA",
     "డా. మౌనిక యనుగుల, సీనియర్ క్లౌడ్ సర్వీసెస్ ఇంజనీర్, ఇక్విఫాక్స్, అట్లాంటా, జార్జియా, USA",
-    "రుత్విక్ ఉప్పలూరు, మేనేజర్, FP&A సిస్టమ్స్, యూనివర్సిటీ ఆఫ్ మిస్సూరి, కెన్సాస్ సిటీ, MO, NC, USA"
+    "రుత్విక్ ఉప్పలూరు, మేనేజర్, FP&A సిస్టమ్స్, యూనివర్సిటీ ఆఫ్ మిస్సూరి, కెన్సాస్ సిటీ, MO, NC, USA",
   ],
   nationalAdvisory: [
     "డా. చి. వి. మురళి కృష్ణ, హెచ్‌ఓడీ, CS-DSc., ఎన్ఆరఐఐటీ (చైర్)",
@@ -234,7 +232,7 @@ const dataTE = {
     "డా. టి. మనస వీన, AIML, ఎన్ఆరఐఐటీ",
     "డా. బి. కొండలు, ప్రొఫెసర్, AIML",
     "డా. కె. గాయత్రి, అసోసియేట్ ప్రొఫెసర్, AIML, ఎన్ఆరఐఐటీ",
-    "ప్రొ. వి. తేజు, CS-AIML, ఎన్ఆరఐఐటీ"
+    "ప్రొ. వి. తేజు, CS-AIML, ఎన్ఆరఐఐటీ",
   ],
   editorial: [
     "డా. డి. సునీత, హెచ్‌ఓడీ: సిఎస్ఈ, ఎన్ఆరఐఐటీ (చైర్)",
@@ -243,7 +241,7 @@ const dataTE = {
     "డా. బి బి. దశరథ్ రామ్, హెచ్‌ఓడీ: CS-AIML, ఎన్ఆరఐఐటీ",
     "డా. పి. రాజేంద్ర కుమార్, హెచ్‌ఓడీ: AIML, ఎన్ఆరఐఐటీ",
     "ప్రొ. వి వి. సుబ్రహ్మణ్యం, డైరెక్టర్ & ప్రొఫెసర్, కంప్యూటర్ అండ్ ఇన్ఫర్మేషన్ సైన్సెస్ స్కూల్, IGNOU, న్యూఢిల్లీ",
-    "డా. షోనాక్ బన్సల్, అసోసియేట్ ప్రొఫెసర్, చండీగఢ్ యూనివర్శిటీ"
+    "డా. షోనాక్ బన్సల్, అసోసియేట్ ప్రొఫెసర్, చండీగఢ్ యూనివర్శిటీ",
   ],
   paperReview: [
     "డా. కె. వి. సాంబశివరావు, డీన్, సిఎస్ఈ, ఎన్ఆరఐఐటీ (చైర్)",
@@ -252,33 +250,57 @@ const dataTE = {
     "శ్రీ జి. సమ్రాట్ కృష్ణ, అసిస్టెంట్ ప్రొఫెసర్, పీబీ ఎస్క్, విజయవాడ",
     "డా. దక్షిణా రంజన్ కిస్కు, అసోసియేట్ ప్రొఫెసర్, NIT దుర్గాపూర్, పశ్చిమబెంగాల్",
     "డా. పి. దుర్గా, సిఎస్ఈ, ఎన్ఆరఐఐటీ",
-    "ప్రొ. జె. చైతన్య, CS-DSc, ఎన్ఆరఐఐటీ"
+    "ప్రొ. జె. చైతన్య, CS-DSc, ఎన్ఆరఐఐటీ",
   ],
 };
 
 // SVG Icon Placeholders (You can use your preferred SVGs here)
 const Icons = {
   ChiefPatrons: () => (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="#0d6efd" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2C13.1 2 14 2.9 14 4c0 1.1-0.9 2-2 2s-2-0.9-2-2c0-1.1 0.9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 24 24"
+      fill="#0d6efd"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2C13.1 2 14 2.9 14 4c0 1.1-0.9 2-2 2s-2-0.9-2-2c0-1.1 0.9-2 2-2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z" />
     </svg>
   ),
   Patrons: () => (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="#198754" xmlns="http://www.w3.org/2000/svg">
-      <path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c0.23 0 0.45 0.02 0.67 0.05-0.19 0.75-0.67 1.37-1.32 1.7-0.25-0.2-0.53-0.34-0.85-0.41V13h1.5z"/>
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 24 24"
+      fill="#198754"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M16 11c1.66 0 3-1.34 3-3s-1.34-3-3-3-3 1.34-3 3 1.34 3 3 3zm-8 0c1.66 0 3-1.34 3-3S9.66 5 8 5 5 6.34 5 8s1.34 3 3 3zm0 2c-2.33 0-7 1.17-7 3.5V19h14v-2.5c0-2.33-4.67-3.5-7-3.5zm8 0c0.23 0 0.45 0.02 0.67 0.05-0.19 0.75-0.67 1.37-1.32 1.7-0.25-0.2-0.53-0.34-0.85-0.41V13h1.5z" />
     </svg>
   ),
   GeneralChair: () => (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="#0dcaf0" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z"/>
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 24 24"
+      fill="#0dcaf0"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2l3.09 6.26L22 9.27l-5 4.87 1.18 6.88L12 17.77l-6.18 3.25L7 14.14 2 9.27l6.91-1.01L12 2z" />
     </svg>
   ),
   ConvenerCo: () => (
-    <svg width="40" height="40" viewBox="0 0 24 24" fill="#ffc107" xmlns="http://www.w3.org/2000/svg">
-      <path d="M12 2c1.1 0 2 .9 2 2s-0.9 2-2 2-2-0.9-2-2S10.9 2 12 2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z"/>
+    <svg
+      width="40"
+      height="40"
+      viewBox="0 0 24 24"
+      fill="#ffc107"
+      xmlns="http://www.w3.org/2000/svg"
+    >
+      <path d="M12 2c1.1 0 2 .9 2 2s-0.9 2-2 2-2-0.9-2-2S10.9 2 12 2zm9 7h-6v13h-2v-6h-2v6H9V9H3V7h18v2z" />
     </svg>
-  )
-}
+  ),
+};
 
 export default function ConferenceOrganizingCommittee() {
   const [inView, setInView] = useState(false);
@@ -289,7 +311,9 @@ export default function ConferenceOrganizingCommittee() {
   // CountUp animation on scroll into view
   useEffect(() => {
     const onScroll = () => {
-      const rect = document.getElementById("statsSection")?.getBoundingClientRect();
+      const rect = document
+        .getElementById("statsSection")
+        ?.getBoundingClientRect();
       if (rect?.top < window.innerHeight && !inView) setInView(true);
     };
     window.addEventListener("scroll", onScroll);
@@ -297,7 +321,9 @@ export default function ConferenceOrganizingCommittee() {
     return () => window.removeEventListener("scroll", onScroll);
   }, [inView]);
 
-  const totalCommittees = Object.keys(d).filter(k => Array.isArray(d[k])).length;
+  const totalCommittees = Object.keys(d).filter((k) =>
+    Array.isArray(d[k])
+  ).length;
   const totalMembers = Object.values(d).filter(Array.isArray).flat().length;
 
   // Correspond items strictly to their headings/titles
@@ -305,7 +331,11 @@ export default function ConferenceOrganizingCommittee() {
     { title: d.cardTitles[0], list: d.chiefPatrons, Icon: Icons.ChiefPatrons },
     { title: d.cardTitles[1], list: d.patrons, Icon: Icons.Patrons },
     { title: d.cardTitles[2], list: d.generalChair, Icon: Icons.GeneralChair },
-    { title: d.cardTitles[3], list: [...d.convener, ...d.coConvener], Icon: Icons.ConvenerCo },
+    {
+      title: d.cardTitles[3],
+      list: [...d.convener, ...d.coConvener],
+      Icon: Icons.ConvenerCo,
+    },
   ];
 
   return (
@@ -315,7 +345,7 @@ export default function ConferenceOrganizingCommittee() {
         <h1 className="display-4">{d.pageTitle}</h1>
         <p className="lead">{d.pageSubtitle}</p>
         <button
-          style={{ } }
+          style={{}}
           className="btn btn-warning position-absolute top-0 end-0 m-3"
           onClick={() => setLang(lang === "EN" ? "TE" : "EN")}
         >
@@ -323,51 +353,83 @@ export default function ConferenceOrganizingCommittee() {
         </button>
       </header>
 
-      <main className="container py-5">
-
+      <main className="container py-5 text-center">
         {/* COUNTS */}
         <section id="statsSection" className="mb-5">
-          <div className="card shadow-lg border-0 text-center p-4">
-            <div className="row">
-              <div className="col-md-6"><h2>{inView ? <CountUp end={totalCommittees} duration={2} /> : 0}</h2><p>{d.totalCommitteesLabel}</p></div>
-              <div className="col-md-6"><h2>{inView ? <CountUp end={totalMembers} duration={2} /> : 0}</h2><p>{d.totalMembersLabel}</p></div>
+          <div className="row justify-content-center">
+            <div className="col-md-8">
+              <div className="card shadow-lg border-0 text-center p-4">
+                <div className="row">
+                  <div className="col-md-6 mb-3">
+                    <h2>
+                      {inView ? (
+                        <CountUp end={totalCommittees} duration={2} />
+                      ) : (
+                        0
+                      )}
+                    </h2>
+                    <p>{d.totalCommitteesLabel}</p>
+                  </div>
+                  <div className="col-md-6 mb-3">
+                    <h2>
+                      {inView ? <CountUp end={totalMembers} duration={2} /> : 0}
+                    </h2>
+                    <p>{d.totalMembersLabel}</p>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </section>
 
-        {/* KEY ROLES - CARDS WITH CORRECT HEADINGS */}
-        <section className="row g-4 mb-5">
-          {keyRoles.map(({ title, list, Icon }, idx) => (
-            <div key={idx} className="col-12 col-md-6 col-lg-3">
-              <motion.div
-                initial={{ opacity: 0, y: 30 }}
-                animate={{ opacity: 1, y: 0 }}
-                transition={{ delay: idx * 0.2 }}
-                className="card h-100 shadow-lg"
-              >
-                <div className="card-header bg-light text-center py-4">
-                  <Icon />
-                  <div className="mt-2 fw-semibold text-primary">{title}</div>
-                </div>
-                <ul className="list-group list-group-flush small">
-                  {Array.from(new Set(list)).map((m, i) => (
-                    <li key={i} className="list-group-item">{m}</li>
-                  ))}
-                </ul>
-              </motion.div>
-            </div>
-          ))}
+        {/* KEY ROLES */}
+        {/* KEY ROLES */}
+        <section className="container mb-5">
+          <div className="row g-4 justify-content-center align-items-stretch">
+            {keyRoles.map(({ title, list, Icon }, idx) => (
+              <div key={idx} className="col-10 col-sm-6 col-lg-4 d-flex">
+                <motion.div
+                  className="card shadow-lg text-center p-3 mx-auto flex-fill"
+                  style={{ maxWidth: "350px", minHeight: "100%" }}
+                  initial={{ opacity: 0, y: 30 }}
+                  animate={{ opacity: 1, y: 0 }}
+                  transition={{ delay: idx * 0.2 }}
+                >
+                  <div className="mb-3">
+                    <Icon />
+                  </div>
+                  <h5 className="fw-bold">{title}</h5>
+                  <ul className="list-group list-group-flush small">
+                    {Array.from(new Set(list)).map((m, i) => (
+                      <li key={i} className="list-group-item text-start">
+                        {m}
+                      </li>
+                    ))}
+                  </ul>
+                </motion.div>
+              </div>
+            ))}
+          </div>
         </section>
 
-        {/* MAJOR COMMITTEES - LEFT ALIGNED */}
+        {/* MAJOR COMMITTEES */}
+        {/* MAJOR COMMITTEES */}
         <section>
-          <h3 className="mb-4 text-center">{d.majorCommitteesHeading}</h3>
+          <h3 className="mb-4">{d.majorCommitteesHeading}</h3>
           <div className="accordion" id="committeesAccordion">
-            {["technicalProgram","internationalAdvisory","nationalAdvisory","editorial","paperReview"].map((key, idx) => (
+            {[
+              "technicalProgram",
+              "internationalAdvisory",
+              "nationalAdvisory",
+              "editorial",
+              "paperReview",
+            ].map((key, idx) => (
               <div className="accordion-item mb-3 shadow-sm" key={key}>
                 <h2 className="accordion-header" id={`heading${idx}`}>
                   <button
-                    className={`accordion-button ${idx > 0 ? "collapsed" : ""} justify-content-center`}
+                    className={`accordion-button ${
+                      idx > 0 ? "collapsed" : ""
+                    } justify-content-center`}
                     type="button"
                     data-bs-toggle="collapse"
                     data-bs-target={`#collapse${idx}`}
@@ -375,14 +437,23 @@ export default function ConferenceOrganizingCommittee() {
                     {d.accordions[key]}
                   </button>
                 </h2>
-                <div id={`collapse${idx}`} className={`accordion-collapse collapse ${idx === 0 ? "show" : ""}`}>
+                <div
+                  id={`collapse${idx}`}
+                  className={`accordion-collapse collapse ${
+                    idx === 0 ? "show" : ""
+                  }`}
+                >
                   <div className="accordion-body">
-                    <div className="row justify-content-start">
-                      {d[key].map((m, i) => (
-                        <div key={i} className="col-12 col-md-6 mb-2 text-start">
-                          • {m}
+                    <div className="row justify-content-center">
+                      <div className="col-md-10">
+                        <div className="row">
+                          {d[key].map((m, i) => (
+                            <div key={i} className="col-md-6 text-start mb-2">
+                              • {m}
+                            </div>
+                          ))}
                         </div>
-                      ))}
+                      </div>
                     </div>
                   </div>
                 </div>
