@@ -10,11 +10,7 @@ function Conference() {
     <div>
       <ScrollToTop />
       <Homenav />
-<<<<<<< HEAD
-      <div>
-=======
       <div style={{ margin: "120px" }}>
->>>>>>> ca8630c8db6075167b58e90e01bc0137cf3d0452
         <TimeLine />
         <Important />
       </div>
