@@ -83,7 +83,7 @@ function Homenav() {
                 </li>
                 <li>
                   <Link className="dropdown-item" to="/award">
-                    Awards,Gallery
+                    Awards
                   </Link>
                 </li>
               </ul>

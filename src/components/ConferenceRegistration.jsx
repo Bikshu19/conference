@@ -63,9 +63,9 @@ const ConferenceRegistration = () => {
   ];
 
   return (
-    <section className="text-secondary py-5">
-      <div className="container">
-        <h1 className="text-center text-primary mb-4">
+    <section className="text-secondary py-5 ">
+      <div className="container text">
+        <h1 className="text-center mb-4" style={{"color":"#141E46"}}>
           Conference Registration
         </h1>
         <p className="text-center mb-4">
@@ -84,7 +84,7 @@ const ConferenceRegistration = () => {
             style={{ maxWidth: "60%" }}
           >
             <div
-              className={`flex-shrink-0 bg-primary bg-opacity-10 text-primary rounded-circle d-flex align-items-center justify-content-center ${
+              className={`flex-shrink-0 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center ${
                 idx % 2 === 1 ? "order-sm-2" : ""
               }`}
               style={{
@@ -93,6 +93,7 @@ const ConferenceRegistration = () => {
                 fontSize: 48,
                 fontWeight: "700",
                 userSelect: "none",
+                color:"#141E46"
               }}
             >
               {idx + 1}
