@@ -6,7 +6,9 @@ function Gallery() {
   return (
     <div>
       <Homenav />
-      <Gal />
+      <div style={{ margin: "120px" }}>
+        <Gal />
+      </div>
       <Footer />
     </div>
   );

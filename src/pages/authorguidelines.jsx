@@ -5,19 +5,23 @@ import CallForPapers from "../components/Guidelines/CallForPapers";
 import ImportantDates from "../components/Guidelines/ImportantDates";
 import Homenav from "../components/homepagecomponents/homenav";
 import Footer from "../components/homepagecomponents/homefooter";
+import ScrollToTop from "../components/ScrollToTop";
 
 function Authorguidelines() {
   return (
-    <div>
+    <>
+      <ScrollToTop />
       <Homenav />
       <div style={{ margin: "120px" }}>
         <CallForPapers />
-        <ConferenceTopics />
-        <PaperSubmissionGuidelines />
+      </div>
+      <ConferenceTopics />
+      <PaperSubmissionGuidelines />
+      <div style={{ margin: "50px" }}>
         <ImportantDates />
       </div>
       <Footer />
-    </div>
+    </>
   );
 }
 

@@ -11,34 +11,44 @@ export default function ImportantDatesBootstrap() {
   ];
 
   return (
-    <section className="py-5" style={{ backgroundColor: "#f8f9fa" }}>
+    <section
+      className="py-5"
+      style={{ background: "linear-gradient(180deg, #f8f9fa, #ffffff)" }}
+    >
       <div className="container">
+        {/* Heading */}
         <div className="text-center mb-5">
-          <h2 className="fw-bold text-danger">Important Dates</h2>
-          <p className="text-muted">
-            Stay on top of all deadlines and mark your calendar for these key
-            dates.
+          <h2 className="fw-bold text-primary">Important Dates</h2>
+          <p className="text-muted fs-5">
+            Stay on top of deadlines and mark your calendar for these key
+            events.
           </p>
         </div>
 
-        <div className="row g-4 justify-content-center">
+        {/* Dates */}
+        <div className="row g-4 justify-content-center align-items-stretch">
           {dates.map((item, index) => (
-            <div className="col-md-6" key={index}>
-              <div className="card shadow-sm border-0 h-100">
-                <div className="card-body d-flex align-items-center">
+            <div className="col-12 col-sm-6 col-lg-4 d-flex" key={index}>
+              <div className="card h-100 shadow-sm border-0 transition-card flex-fill">
+                <div className="card-body d-flex align-items-center p-4">
+                  {/* Icon */}
                   <div
-                    className="me-3 d-flex align-items-center justify-content-center rounded-circle"
+                    className="me-3 d-flex align-items-center justify-content-center rounded-circle flex-shrink-0"
                     style={{
-                      width: "50px",
-                      height: "50px",
-                      backgroundColor: "#e9f2ff",
+                      width: "60px",
+                      height: "60px",
+                      backgroundColor: "#eaf2ff",
                     }}
                   >
-                    <FaCalendarAlt size={22} color="#0d6efd" />
+                    <FaCalendarAlt size={26} color="#0d6efd" />
                   </div>
+
+                  {/* Text */}
                   <div>
                     <h6 className="fw-bold mb-1">{item.event}</h6>
-                    <small className="text-primary">{item.date}</small>
+                    <small className="text-primary fw-semibold">
+                      {item.date}
+                    </small>
                   </div>
                 </div>
               </div>
@@ -46,6 +56,19 @@ export default function ImportantDatesBootstrap() {
           ))}
         </div>
       </div>
+
+      {/* Hover styling */}
+      <style>
+        {`
+          .transition-card {
+            transition: transform 0.2s ease, box-shadow 0.2s ease;
+          }
+          .transition-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 0.5rem 1rem rgba(0,0,0,0.1);
+          }
+        `}
+      </style>
     </section>
   );
 }

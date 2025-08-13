@@ -9,9 +9,12 @@ function Homenav() {
   };
 
   const getLinkStyle = (name) => ({
-    color: activeButton === name ? "#141E46" : "#292626ff",
+    color: activeButton === name ? "#141E46" : "#141E46",
     fontWeight: "900",
     cursor: "pointer",
+    position: "relative", // needed for pseudo-elements
+    display: "inline-block", // keeps corners aligned
+    padding: "6px 10px",
   });
 
   return (
@@ -49,7 +52,11 @@ function Homenav() {
         <div className="collapse navbar-collapse" id="navbarSupportedContent">
           <ul
             className="navbar-nav mx-auto mb-2 mb-lg-0"
-            style={{ textAlign: "center" }}
+            style={{
+              textAlign: "center",
+              justifyContent: "center",
+              gap: "1rem",
+            }}
           >
             {/* Conference Info */}
             <li className="nav-item dropdown me-4">
@@ -61,7 +68,7 @@ function Homenav() {
                 style={getLinkStyle("conference")}
                 onClick={() => handleClick("conference")}
               >
-                Conference Info ▾
+                <span>Conference Info ▾</span>
               </a>
               <ul className="dropdown-menu text-center">
                 <li>
@@ -71,7 +78,7 @@ function Homenav() {
                     style={getLinkStyle("location")}
                     onClick={() => handleClick("location")}
                   >
-                    Location
+                    <span>Location</span>
                   </Link>
                 </li>
                 <li>
@@ -81,7 +88,7 @@ function Homenav() {
                     style={getLinkStyle("committee")}
                     onClick={() => handleClick("committee")}
                   >
-                    Conference Committee
+                    <span>Conference Committee</span>
                   </Link>
                 </li>
                 <li>
@@ -91,7 +98,7 @@ function Homenav() {
                     style={getLinkStyle("award")}
                     onClick={() => handleClick("award")}
                   >
-                    Awards
+                    <span>Awards</span>
                   </Link>
                 </li>
                 <li>
@@ -101,7 +108,7 @@ function Homenav() {
                     style={getLinkStyle("gallery")}
                     onClick={() => handleClick("gallery")}
                   >
-                    Gallery
+                    <span>Gallery</span>
                   </Link>
                 </li>
               </ul>
@@ -117,7 +124,7 @@ function Homenav() {
                 style={getLinkStyle("submissions")}
                 onClick={() => handleClick("submissions")}
               >
-                Submissions ▾
+                <span>Submissions ▾</span>
               </a>
               <ul className="dropdown-menu text-center">
                 <li>
@@ -127,7 +134,7 @@ function Homenav() {
                     style={getLinkStyle("guidelines")}
                     onClick={() => handleClick("guidelines")}
                   >
-                    Author Guidelines
+                    <span>Author Guidelines</span>
                   </Link>
                 </li>
               </ul>
@@ -143,7 +150,7 @@ function Homenav() {
                 style={getLinkStyle("about")}
                 onClick={() => handleClick("about")}
               >
-                About ▾
+                <span>About ▾</span>
               </a>
               <ul className="dropdown-menu text-center">
                 <li>
@@ -153,7 +160,7 @@ function Homenav() {
                     style={getLinkStyle("aboutnri")}
                     onClick={() => handleClick("aboutnri")}
                   >
-                    About NRIIT
+                    <span>About NRIIT</span>
                   </Link>
                 </li>
                 <li>
@@ -163,7 +170,7 @@ function Homenav() {
                     style={getLinkStyle("aboutpb")}
                     onClick={() => handleClick("aboutpb")}
                   >
-                    About PB
+                    <span>About PB</span>
                   </Link>
                 </li>
                 <li>
@@ -173,7 +180,7 @@ function Homenav() {
                     style={getLinkStyle("aboutcon")}
                     onClick={() => handleClick("aboutcon")}
                   >
-                    About Conference
+                    <span>About Conference</span>
                   </Link>
                 </li>
                 <li>
@@ -183,7 +190,7 @@ function Homenav() {
                     style={getLinkStyle("aboutvij")}
                     onClick={() => handleClick("aboutvij")}
                   >
-                    About Vijayawada
+                    <span>About Vijayawada</span>
                   </Link>
                 </li>
               </ul>
@@ -197,7 +204,7 @@ function Homenav() {
                 style={getLinkStyle("registration")}
                 onClick={() => handleClick("registration")}
               >
-                Registration
+                <span>Registration</span>
               </Link>
             </li>
 
@@ -209,7 +216,7 @@ function Homenav() {
                 style={getLinkStyle("contact")}
                 onClick={() => handleClick("contact")}
               >
-                Contact
+                <span>Contact</span>
               </Link>
             </li>
           </ul>
