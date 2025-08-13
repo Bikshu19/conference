@@ -6,7 +6,9 @@ function Award() {
   return (
     <div>
       <Homenav />
-      <Awards/>
+      <div style={{"margin":"120px"}}>
+        <Awards/>
+      </div>
       <Footer />
     </div>
   );
