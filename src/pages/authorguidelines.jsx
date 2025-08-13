@@ -3,14 +3,18 @@ import PaperSubmissionGuidelines from '../components/Guidelines/PaperSubmissionG
 import ConferenceTopics from '../components/Guidelines/ConferenceTopics'
 import CallForPapers from '../components/Guidelines/CallForPapers'
 import ImportantDates from '../components/Guidelines/ImportantDates'
+import Homenav from "../components/homepagecomponents/homenav";
+import Footer from "../components/homepagecomponents/homefooter";
 
 function Authorguidelines() {
   return (
     <div>
+      <Homenav />
        <CallForPapers/>
        <ConferenceTopics/>
        <PaperSubmissionGuidelines/>
        <ImportantDates/>
+       <Footer />
       
       
      
