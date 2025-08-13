@@ -25,6 +25,7 @@ export default function HeroSection() {
             id="heroCarousel"
             className="carousel slide"
             data-bs-ride="carousel"
+            data-bs-interval="1030" // 1.5 seconds interval
           >
             <div className="carousel-inner rounded">
               <div className="carousel-item active">
