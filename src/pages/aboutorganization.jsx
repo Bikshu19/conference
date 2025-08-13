@@ -1,9 +1,13 @@
-import React from 'react'
-
+import React from "react";
+import Homenav from "../components/homepagecomponents/homenav";
+import Footer from "../components/homepagecomponents/homefooter";
 function Aboutorg() {
   return (
-    <div>Aboutorg</div>
-  )
+    <div>
+      <Homenav />
+      <Footer />
+    </div>
+  );
 }
 
-export default Aboutorg
+export default Aboutorg;

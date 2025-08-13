@@ -1,12 +1,13 @@
-import React from 'react'
-import Gallery from '../components/Gallery'
-
+import React from "react";
+import Homenav from "../components/homepagecomponents/homenav";
+import Footer from "../components/homepagecomponents/homefooter";
 function Award() {
   return (
     <div>
-     <Gallery/>
+      <Homenav />
+      <Footer />
     </div>
-  )
+  );
 }
 
-export default Award
+export default Award;
