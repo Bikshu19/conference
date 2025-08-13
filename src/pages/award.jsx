@@ -1,8 +1,11 @@
 import React from 'react'
+import Gallery from '../components/Gallery'
 
 function Award() {
   return (
-    <div>Award</div>
+    <div>
+     <Gallery/>
+    </div>
   )
 }
 

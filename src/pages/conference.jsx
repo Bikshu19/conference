@@ -1,6 +1,6 @@
 import React from 'react'
-import Important from '../components/Important'
-import TimeLine from '../components/TimeLine'
+import Important from '../components/ConferenceCommitte/Important'
+import TimeLine from '../components/ConferenceCommitte/TimeLine'
 
 function Conference() {
   return (

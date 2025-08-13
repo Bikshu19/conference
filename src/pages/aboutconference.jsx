@@ -1,8 +1,11 @@
 import React from 'react'
+import AboutConference from '../components/AboutConference/AboutConference'
 
 function Aboutcon() {
   return (
-    <div>Aboutcon</div>
+    <div>
+     <AboutConference/>
+    </div>
   )
 }
 
