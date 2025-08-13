@@ -38,7 +38,7 @@ const ConferenceRegistration = () => {
     {
       title: "Click",
       description:
-        "Click on the  button to register for the mentioned conference.",
+        "Click on the button to register for the mentioned conference.",
     },
     {
       title: "Upload",
@@ -63,52 +63,57 @@ const ConferenceRegistration = () => {
   ];
 
   return (
-    <section className="text-secondary py-5 ">
-      <div className="container text">
-        <h1 className="text-center mb-4" style={{"color":"#141E46"}}>
+    <section className="text-secondary py-5">
+      <div className="container text-center">
+        <h1 className="mb-4" style={{ color: "#141E46" }}>
           Conference Registration
         </h1>
-        <p className="text-center mb-4">
+        <p className="mb-4">
           <strong>Eligibility:</strong> Faculty members, research scholars,
           postgraduate students from AICTE-approved institutions, and industry
           professionals are eligible to apply.
         </p>
-        <p className="text-center mb-5">
+        <p className="mb-5">
           <strong>Registration Fee:</strong> Nil
         </p>
 
-        {steps.map(({ title, description }, idx) => (
-          <div
-            key={idx}
-            className="d-flex flex-column flex-sm-row align-items-center border-bottom pb-4 mb-4 mx-auto"
-            style={{ maxWidth: "60%" }}
-          >
+        <div className="d-flex flex-column align-items-center">
+          {steps.map(({ title, description }, idx) => (
             <div
-              className={`flex-shrink-0 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center ${
-                idx % 2 === 1 ? "order-sm-2" : ""
-              }`}
+              key={idx}
+              className="d-flex flex-column flex-sm-row align-items-center border-bottom pb-4 mb-4"
               style={{
-                width: 128,
-                height: 128,
-                fontSize: 48,
-                fontWeight: "700",
-                userSelect: "none",
-                color:"#141E46"
+                maxWidth: "700px",
+                width: "100%",
               }}
             >
-              {idx + 1}
+              <div
+                className={`flex-shrink-0 bg-primary bg-opacity-10 rounded-circle d-flex align-items-center justify-content-center ${
+                  idx % 2 === 1 ? "order-sm-2" : ""
+                }`}
+                style={{
+                  width: 128,
+                  height: 128,
+                  fontSize: 48,
+                  fontWeight: "700",
+                  userSelect: "none",
+                  color: "#141E46",
+                }}
+              >
+                {idx + 1}
+              </div>
+              <div
+                className={`flex-grow-1 mt-3 mt-sm-0 ms-sm-4 text-center text-sm-start ${
+                  idx % 2 === 1 ? "order-sm-1" : ""
+                }`}
+                style={{ fontSize: "1.1rem" }}
+              >
+                <h2 className="h5 text-dark mb-2">{title}</h2>
+                <p className="mb-0">{description}</p>
+              </div>
             </div>
-            <div
-              className={`flex-grow-1 mt-3 mt-sm-0 ms-sm-4 text-center text-sm-start ${
-                idx % 2 === 1 ? "order-sm-1" : ""
-              }`}
-              style={{ fontSize: "1.1rem" }}
-            >
-              <h2 className="h5 text-dark mb-2">{title}</h2>
-              <p className="mb-0">{description}</p>
-            </div>
-          </div>
-        ))}
+          ))}
+        </div>
       </div>
     </section>
   );

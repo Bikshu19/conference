@@ -7,7 +7,10 @@ function Aboutcon() {
   return (
     <div>
       <Homenav />
-      <AboutConference />
+      <div style={{"margin":"90px"}}>
+          <AboutConference />
+      </div>
+      
       <Footer />
     </div>
   );
