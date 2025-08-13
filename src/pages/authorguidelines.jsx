@@ -10,15 +10,13 @@ function Authorguidelines() {
   return (
     <div>
       <Homenav />
-       <CallForPapers/>
+       <div style={{'marginTop':"60px"}}>
+        <CallForPapers/>
        <ConferenceTopics/>
        <PaperSubmissionGuidelines/>
        <ImportantDates/>
+       </div>
        <Footer />
-      
-      
-     
-      
     </div>
   )
 }

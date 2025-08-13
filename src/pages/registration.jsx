@@ -7,7 +7,9 @@ function Registration() {
   return (
     <div>
       <Homenav />
-      <ConferenceRegistration />
+      <div style={{'marginTop':"50px"}}>
+        <ConferenceRegistration />
+      </div>
       <Footer />
     </div>
   );

@@ -2,7 +2,7 @@ import React from "react";
 
 export default function ProductDetail() {
   return (
-    <section className="py-5 bg-light border-top">
+    <section className="py-5">
       <div className="container">
         <div className="row g-5 align-items-center">
           {/* Product Image */}
