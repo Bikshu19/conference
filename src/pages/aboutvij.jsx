@@ -2,14 +2,15 @@ import React from "react";
 import Homenav from "../components/homepagecomponents/homenav";
 import Footer from "../components/homepagecomponents/homefooter";
 import ScrollToTop from "../components/ScrollToTop";
+import Aboutvijj from "../components/aboutvij/aboutvijcom";
 
 function Aboutvij() {
   return (
     <div>
       <ScrollToTop />
       <Homenav />
-      <div style={{"margin":"60px"}}>
-<Aboutvijj/>
+      <div style={{ margin: "60px" }}>
+        <Aboutvijj />
       </div>
       <Footer />
     </div>
