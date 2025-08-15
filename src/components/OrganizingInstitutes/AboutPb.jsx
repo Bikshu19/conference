@@ -38,32 +38,12 @@ const AboutPb = () => {
     <div
       style={{
         fontFamily: "'Poppins', sans-serif",
-        color: "#2c3e50",
+        color: "#141E46",
         minHeight: "100vh",
-        width: "100vw", // Fix width to viewport width
-        overflowX: "hidden", // Hide horizontal overflow
+        width: "100vw",
+        overflowX: "hidden",
       }}
     >
-      <style>{`
-        *, *::before, *::after {
-          box-sizing: border-box;
-        }
-        html {
-          scroll-behavior: smooth;
-        }
-        @keyframes fadeIn {
-          to {
-            opacity: 1;
-          }
-        }
-        /* Responsive text wrap for h1 */
-        h1 {
-          white-space: normal !important; /* allow wrapping */
-          max-width: 90vw !important; /* prevent overflow */
-          overflow-wrap: break-word;
-        }
-      `}</style>
-
       {/* Banner */}
       <header
         style={{
@@ -99,27 +79,6 @@ const AboutPb = () => {
         >
           {displayedText}
         </h1>
-
-        {/* Translate Button */}
-        <button
-          onClick={toggleLang}
-          style={{
-            position: "absolute",
-            top: 20,
-            right: 20,
-            backgroundColor: "rgba(91, 241, 68, 0.8)",
-            border: "none",
-            padding: "8px 12px",
-            borderRadius: "20px",
-            cursor: "pointer",
-            fontWeight: "600",
-            color: "#2c3e50",
-          }}
-          aria-label="Toggle Language"
-          title="Toggle English / Telugu"
-        >
-          {lang === "en" ? "తెలుగు" : "English"}
-        </button>
       </header>
 
       {/* About Section */}
@@ -127,13 +86,12 @@ const AboutPb = () => {
         style={{
           maxWidth: "1200px",
           margin: "0 auto",
-          padding: "60px 20px 100px 20px", // keep small horizontal padding
+          padding: "60px 20px 100px 20px",
           borderRadius: "30px 30px 0 0",
           opacity: fade ? 1 : 0,
           transition: "opacity 0.3s ease",
           transform: fade ? "translateY(0)" : "translateY(20px)",
-          animationFillMode: "forwards",
-          color: "#34495e",
+          color: "#141E46",
           lineHeight: "1.75",
           fontSize: "1.15rem",
           textAlign: "justify",
@@ -142,59 +100,47 @@ const AboutPb = () => {
           position: "relative",
           zIndex: 5,
           backgroundColor: "transparent",
-          boxShadow: "none",
-          width: "100%", // full width of parent (which is 100vw)
-          boxSizing: "border-box", // ensure padding included in width
+          width: "100%",
+          boxSizing: "border-box",
         }}
       >
         <h2
           style={{
             fontSize: "2.2rem",
             fontWeight: "600",
-            marginBottom: "25px",
+            marginBottom: "15px",
             textAlign: "center",
-            color: "#34495e",
+            color: "#141E46",
           }}
         >
           About Our College
         </h2>
+
+        {/* Toggle Button Under Heading */}
+        <div style={{ textAlign: "center", marginBottom: "30px" }}>
+          <button
+            onClick={toggleLang}
+            style={{
+              backgroundColor: lang === "en" ? "red" : "green",
+              border: "none",
+              padding: "8px 16px",
+              borderRadius: "70px",
+              cursor: "pointer",
+              fontWeight: "400",
+              color: "#ffffffff",
+            }}
+            aria-label="Toggle Language"
+            title="Toggle English / Telugu"
+          >
+            {lang === "en" ? "తెలుగు" : "English"}
+          </button>
+        </div>
 
         {content[lang].map((paragraph, idx) => (
           <p key={idx} style={{ marginBottom: "20px" }}>
             {paragraph}
           </p>
         ))}
-
-        {/* Contact Us Button */}
-        <div
-          style={{
-            display: "flex",
-            justifyContent: "center",
-            marginTop: "30px",
-          }}
-        >
-          <button
-            style={{
-              backgroundColor: "#27ae60",
-              border: "none",
-              color: "white",
-              padding: "12px 28px",
-              borderRadius: "30px",
-              fontSize: "1rem",
-              cursor: "pointer",
-              boxShadow: "0 4px 15px rgba(39, 174, 96, 0.4)",
-              transition: "background-color 0.3s ease",
-            }}
-            onMouseEnter={(e) =>
-              (e.currentTarget.style.backgroundColor = "#2ecc71")
-            }
-            onMouseLeave={(e) =>
-              (e.currentTarget.style.backgroundColor = "#27ae60")
-            }
-          >
-            Contact Us
-          </button>
-        </div>
       </section>
     </div>
   );

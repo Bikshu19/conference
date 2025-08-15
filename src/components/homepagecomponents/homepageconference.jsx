@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router-dom";
 import { ChevronsRight } from "lucide-react";
 export default function ConferenceFeatures() {
   return (
@@ -65,9 +66,9 @@ export default function ConferenceFeatures() {
 
         {/* View More Button */}
         <div className="text-center mt-5">
-          <button className="btn px-4 py-2 rounded-pill" style={{"backgroundColor":"#141E46 ","color":"white"}} >
+         <Link to='/conference'> <button className="btn px-4 py-2 rounded-pill" style={{"backgroundColor":"#141E46 ","color":"white"}} >
             View More<ChevronsRight />
-          </button>
+          </button></Link>
         </div>
       </div>
     </section>

@@ -3,7 +3,7 @@ import React, { useState } from "react";
 const hods = [
   {
     id: 1,
-    name: "Dr. Sunitha",
+    name: "Dr. Suneetha",
     profession: "Head of Department, CSE",
     description:
       "Dr. Sunitha has over 15 years of experience in computer science education and research, specializing in AI and Machine Learning.",
@@ -82,13 +82,11 @@ const AboutDepartment = () => {
             fontSize: "1rem",
             borderRadius: "25px",
             border: "none",
-            backgroundColor: "#2980b9",
+            backgroundColor: language === "english" ? "red" : "green",
             color: "white",
             boxShadow: "0 3px 6px rgba(0,0,0,0.2)",
             transition: "background-color 0.3s ease",
           }}
-          onMouseEnter={(e) => (e.target.style.backgroundColor = "#1c5980")}
-          onMouseLeave={(e) => (e.target.style.backgroundColor = "#2980b9")}
         >
           {language === "english" ? "తెలుగు" : "English"}
         </button>
@@ -114,7 +112,7 @@ const AboutDepartment = () => {
             userSelect: "none",
             opacity: 1,
             transition: "opacity 0.3s ease",
-            textShadow: "0 2px 8px rgba(0,0,0,0.3)",
+            color: "#141E46",
             marginBottom: "30px",
             whiteSpace: "nowrap",
             overflow: "hidden",

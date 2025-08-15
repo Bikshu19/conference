@@ -1,65 +1,85 @@
-import React from "react";
-
-import "./AboutConference.css"; // We'll add custom CSS here
+import React, { useState } from "react";
+import "./AboutConference.css"; // Custom CSS
 
 export default function AboutConference() {
+  const [lang, setLang] = useState("en");
+
+  const toggleLang = () => {
+    setLang((prev) => (prev === "en" ? "te" : "en"));
+  };
+
+  const content = {
+    en: [
+      `The International Conference on Quantum AI and Deep-Tech Innovations
+      for Next-Gen Intelligence (QUADNEXT-2026) is scheduled from 
+      February 6–7, 2026 at NRI Institute of Technology, Agiripalli, Vijayawada, India.`,
+      `This event brings together academicians, research scholars, industry professionals,
+      technologists, policymakers, and students from across the globe to share research outcomes and innovations.`,
+      `QUADNEXT-2026 provides a unique platform for global experts to connect, bridging the gap
+      between theory and practice through interdisciplinary and domain-specific approaches.`,
+      `As the world advances toward next-gen intelligence, integrating quantum computing
+      with AI and deep technologies unlocks unprecedented capabilities in automation, optimization,
+      decision-making, and real-time problem-solving.`,
+      `This conference fosters collaborations, shares breakthrough research, and deliberates
+      on futuristic innovations in science, engineering, and technology.`,
+      `Eminent keynote speakers from around the world will share their experiences and insights.
+      We invite you to participate and make QUADNEXT-2026 a grand success.`
+    ],
+    te: [
+      `క్వాంటం AI మరియు డీప్-టెక్ ఇన్నోవేషన్స్ పై అంతర్జాతీయ కాన్ఫరెన్స్
+      నెక్ట్స్-జెన్ ఇంటెలిజెన్స్ (QUADNEXT-2026) ఫిబ్రవరి 6–7, 2026 న NRI ఇన్‌స్టిట్యూట్ ఆఫ్ టెక్నాలజీ, అగిరిపల్లి, విజయవాడ, ఇండియాలో నిర్వహించబడుతుంది.`,
+      `ఈ ఈవెంట్‌లో ప్రపంచవ్యాప్తంగా నుండి అకాడెమిసియన్లు, పరిశోధకులు, పరిశ్రమ నిపుణులు,
+      సాంకేతిక నిపుణులు, పాలసీ మేకర్స్ మరియు విద్యార్థులు పరిశోధనా ఫలితాలు మరియు ఇన్నోవేషన్స్‌ను పంచుకుంటారు.`,
+      `QUADNEXT-2026 గ్లోబల్ ఎక్స్‌పర్ట్స్‌ను కనెక్ట్ చేయడానికి ప్రత్యేక వేదికను అందిస్తుంది, సిద్దాంతం మరియు ప్రాక్టీస్ మధ్య గ్యాప్‌ను అంతరవిద్యా మరియు డొమైన్-స్పెసిఫిక్ అప్లికేషన్ల ద్వారా భర్తీ చేస్తుంది.`,
+      `ప్రపంచం నెక్ట్స్-జెన్ ఇంటెలిజెన్స్ వైపు ముందుకు వెళ్తున్నప్పుడు, AI మరియు డీప్ టెక్నాలజీస్‌తో క్వాంటం కంప్యూటింగ్‌ను ఇంటిగ్రేట్ చేయడం ఆటోమేషన్, ఆప్టిమైజేషన్,
+      నిర్ణయాలు తీసుకోవడం మరియు రియల్-టైమ్ సమస్య పరిష్కారంలో అమితమైన సామర్థ్యాలను అన్లాక్ చేస్తుంది.`,
+      `ఈ కాన్ఫరెన్స్ కలయికలను ప్రోత్సహిస్తుంది, సాంకేతిక విప్లవ పరిశోధనలను పంచుతుంది, మరియు భవిష్యత్తు ఇన్నోవేషన్స్ పై చర్చిస్తుంది.`,
+      `ప్రఖ్యాత కీ నోట్ స్పీకర్స్ తమ అనుభవాలు మరియు అవగాహనలను పంచుకుంటారు.
+      మేము మీరు పాల్గొని QUADNEXT-2026 ను విజయం పరచాలని ఆహ్వానిస్తున్నాము.`
+    ]
+  };
+
   return (
-    <section className="text-secondary py-5">
+    <section className="about-conference py-5 text-secondary">
       <div className="container">
-        <h1 className="fw-bold display-5 mb-4 text-center">
+        <h1 className="fw-bold display-5 mb-3 text-center about-conference">
           About The Conference
         </h1>
 
-        <div className="conference-text">
-          {/* Center image with float */}
-          <img
-            src="./conference.webp"
-            alt="Conference"
-            className="conference-image"
-          />
+        {/* Toggle Button */}
+        <div className="text-center mb-4">
+          <button
+            onClick={toggleLang}
+            style={{
+              backgroundColor: lang === "en" ? "red" : "green",
+              border: "none",
+              padding: "8px 12px",
+              borderRadius: "20px",
+              cursor: "pointer",
+              fontWeight: "600",
+              color: "#ffffffff",
+            }}
+          >
+            {lang === "en" ? "తెలుగు" : "English"}
+          </button>
+        </div>
 
-          <p className="lead">
-            The International Conference on Quantum AI and Deep-Tech Innovations
-            for Next-Gen Intelligence (QUADNEXT-2026) is scheduled to be held
-            from <strong>February 6–7, 2026</strong>, at NRI Institute of
-            Technology, Agiripalli, Vijayawada, India.
-          </p>
+        <div className="conference-content d-flex flex-column flex-lg-row align-items-center">
+          {/* Image */}
+          <div className="conference-image-wrapper mb-4 mb-lg-0 me-lg-4">
+            <img
+              src="./conference.webp"
+              alt="QUADNEXT-2026 Conference Event"
+              className="conference-image img-fluid rounded shadow"
+            />
+          </div>
 
-          <p className="lead">
-            This grand event aims to bring together academicians, research
-            scholars, industry professionals, technologists, policymakers, and
-            students from technical institutions, universities, and research
-            laboratories across the globe to share their research outcomes and
-            innovations.
-          </p>
-
-          <p className="lead">
-            QUADNEXT-2026 offers an unparalleled platform for global experts to
-            connect and communicate, fostering a strong link between theory and
-            practice. The conference will explore diverse research perspectives
-            and innovations through interdisciplinary and domain-specific
-            approaches.
-          </p>
-
-          <p className="lead">
-            As the world advances towards the next generation of intelligence,
-            the integration of quantum computing with AI and deep technologies
-            is unlocking unprecedented capabilities in automation, optimization,
-            decision-making, and real-time problem-solving.
-          </p>
-
-          <p className="lead">
-            This conference serves as a unique platform to deliberate on recent
-            advancements, share breakthrough research, and foster collaborations
-            for futuristic innovations in science, engineering, and technology.
-          </p>
-
-          <p className="lead">
-            Eminent keynote speakers from around the world have been invited to
-            share their experiences, research results, and insights on future
-            directions. We cordially invite you to participate and make this
-            conference a grand success.
-          </p>
+          {/* Text */}
+          <div className="conference-text">
+            {content[lang].map((paragraph, idx) => (
+              <p key={idx} className="lead">{paragraph}</p>
+            ))}
+          </div>
         </div>
       </div>
     </section>

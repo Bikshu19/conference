@@ -26,7 +26,7 @@ const CustomerCare = () => {
         }}
       >
         <img
-          src="/Location/logo.jpg"
+          src="./Location/logo.jpg"
           alt="College"
           style={{
             width: "100%",

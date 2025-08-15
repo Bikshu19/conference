@@ -9,12 +9,12 @@ const ImportantNote = () => {
         className="shadow-lg border-0 p-4 mx-auto"
         style={{
           maxWidth: "800px",
-          background: "linear-gradient(135deg, #fff4e6 0%, #ffe0b3 100%)",
+          background: "linear-gradient(135deg, #53cac8ff 0%, #b3caffff 100%)",
           borderRadius: "12px",
         }}
       >
-        <h3 className="text-primary fw-bold mb-4">
-          <i className="bi bi-exclamation-triangle-fill me-2"></i>
+        <h3 className=" fw-bold mb-4" style={{ color: "#141E46" }}>
+          <i className="bi bi-exclamation-triangle-fill me-2" style={{ color: "#141E46" }}/>
           Important Note
         </h3>
         <ListGroup variant="flush">
