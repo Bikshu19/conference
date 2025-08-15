@@ -35,13 +35,13 @@ function Gallery() {
     "/icraic2it-38-scaled.jpg",
     "/icraic2it-39-scaled.jpg",
     "/icraic2it-40-scaled.jpg",
-    "/icraic2it-41-scaled.jpg"
+    "/icraic2it-41-scaled.jpg",
   ];
 
   const [images, setImages] = useState([]);
 
   useEffect(() => {
-    setImages(originalImages); // no shuffle, just original order
+    setImages(originalImages);
   }, []);
 
   return (
@@ -50,24 +50,60 @@ function Gallery() {
       {images.length === 0 ? (
         <p style={styles.empty}>No images to display.</p>
       ) : (
-        <div style={styles.grid}>
+        <div className="gallery-grid">
           {images.map((src, idx) => (
             <a
               key={`${src}-${idx}`}
               href={src}
-              target="_self"
-              style={styles.card}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="gallery-card"
             >
-              <img
-                src={src}
-                alt={`Conference ${idx + 1}`}
-                style={styles.image}
-                loading="lazy"
-              />
+              <img src={src} alt={`Conference ${idx + 1}`} loading="lazy" />
             </a>
           ))}
         </div>
       )}
+
+      <style jsx>{`
+        .gallery-grid {
+          display: grid;
+          grid-template-columns: repeat(4, 1fr);
+          gap: 12px;
+        }
+
+        @media (max-width: 1024px) {
+          .gallery-grid {
+            grid-template-columns: repeat(2, 1fr);
+          }
+        }
+
+        @media (max-width: 768px) {
+          .gallery-grid {
+            grid-template-columns: 1fr;
+          }
+        }
+
+        .gallery-card {
+          display: block;
+          overflow: hidden;
+          border-radius: 8px;
+          box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+
+        .gallery-card:hover {
+          transform: scale(1.03);
+          box-shadow: 0 4px 12px rgba(0, 0, 0, 0.25);
+        }
+
+        .gallery-card img {
+          width: 100%;
+          height: 100%;
+          object-fit: cover;
+          display: block;
+        }
+      `}</style>
     </div>
   );
 }
@@ -75,35 +111,12 @@ function Gallery() {
 const styles = {
   container: {
     padding: "20px",
-    boxSizing: "border-box",
     maxWidth: "1400px",
     margin: "0 auto",
   },
   title: {
     textAlign: "center",
-    marginBottom: "16px",
-  },
-  grid: {
-    display: "grid",
-    gridTemplateColumns: "repeat(4, 1fr)",
-    gap: "8px",
-    width: "100%",
-  },
-  card: {
-    width: "100%",
-    aspectRatio: "4/3",
-    overflow: "hidden",
-    display: "block",
-    borderRadius: "8px",
-    boxShadow: "0 1px 4px rgba(0,0,0,0.1)",
-    transition: "transform 0.2s ease",
-    textDecoration: "none",
-  },
-  image: {
-    width: "100%",
-    height: "100%",
-    objectFit: "cover",
-    display: "block",
+    marginBottom: "20px",
   },
   empty: {
     textAlign: "center",
