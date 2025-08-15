@@ -28,7 +28,7 @@ function HomepageComponents() {
               }}
             />
             <img
-              src="/Untitled design.jpg"
+              src="/Untitled design-1.jpg"
               className="w-100 d-none d-md-block"
               alt="Large screen"
               style={{
@@ -41,7 +41,7 @@ function HomepageComponents() {
             <div
               className="position-absolute top-0 start-0 w-100 h-100"
               style={{
-                background: "linear-gradient(to bottom, #00000053, rgba(255, 255, 255, 1))",
+                background: "linear-gradient(to bottom, #0000000c, rgba(255, 255, 255, 0.67))",
                 pointerEvents: "none",
               }}
             />
