@@ -128,7 +128,7 @@ const NriLocation = () => {
           <iframe
             title="NRI Institute of Technology Location"
             className="map-frame"
-            src={`https://www.google.com/maps?q=${lat},${lng}&z=19&output=embed`}
+            src={`https://www.google.com/maps?q=${lat},${lng}&z=14&output=embed`}
             loading="lazy"
             allowFullScreen
           />
