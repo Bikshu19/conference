@@ -1,14 +1,17 @@
 import React from "react";
 import '@fortawesome/fontawesome-free/css/all.min.css';
 import { Link } from 'react-router-dom';
+import { label } from "framer-motion/client";
 
 const footerSections = [
   {
     title: "Conference Info",
     links: [
-      { label: " Location", href: " /location" },
+      { label: " Location", href: "/location" },
       { label: " Conference Committe", href: "/conference" },
-      { label: "Awards,Gallery", href: "/award" },
+      { label: "Awards", href: "/award" },
+      { label: "Gallery", href: "/gallery" }
+      
     ],
   },
   {
@@ -17,6 +20,7 @@ const footerSections = [
       { label: " Author Guidelines", href: "/authorguidelines" },
       { label: "Registration", href: "/registration" },
       { label: "Contact", href: "/contact" },
+      { label: "Accommodation", href: "/accommodation" }
     ],
   },
   {
@@ -39,7 +43,7 @@ const Footer = () => {
           {/* Logo */}
           <div className="col-12 col-md-auto mb-3">
           <Link className="navbar-brand text-white" to="/">
-          <img src='./logo.png' style={{'width':'150px'}}/>
+          <img src='./logo-1.png' style={{'width':'150px'}}/>
         </Link>
             <small className="d-block mb-3" style={{'color':'#141E46'}}>&copy; 2008 NRI Institute of technology</small>
           </div>
@@ -51,7 +55,7 @@ const Footer = () => {
               <ul className="list-unstyled text-small">
                 {section.links.map((link, idx) => (
                   <li key={idx} >
-                    <a style={{'color':'#141E46'}} className="text-decoration-none" href={link.href} >{link.label}</a>
+                    <Link to={link.href} style={{'color':'#141E46'}} className="text-decoration-none"  >{link.label}</Link>
                   </li>
                 ))}
               </ul>

@@ -1,13 +1,14 @@
 import React from 'react';
 import { ArrowRight, Mail } from 'lucide-react';
 import { color } from 'framer-motion';
+import {Link} from 'react-router-dom';
 
 function Homepagebtn() {
   return (
-    <div><button
+    <div><Link to='/authorguidelines'><button
   type="button"
   className="btn d-inline-flex align-items-center gap-2 fw-semibold rounded-pill px-4 py-2 px-md-5 py-md-3 px-lg-5 py-lg-3"
-  style={{
+  style={{  
     backgroundColor: '#141E46',
     borderColor: '#141E46',
     color: '#fff',
@@ -23,7 +24,7 @@ function Homepagebtn() {
 >
   Get Started
   <ArrowRight style={{ width: '1.25rem', height: '1.25rem' }} />
-</button>
+</button></Link>
 </div>
   )
 }

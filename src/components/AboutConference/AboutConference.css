@@ -1,14 +1,22 @@
-.conference-text {
-  position: relative;
-  text-align: justify;
+.about-conference {
+  color: #141E46;
+}
+
+.conference-content {
+  gap: 2rem;
+}
+
+.conference-image-wrapper {
+  flex-shrink: 0;
+  max-width: 400px;
 }
 
 .conference-image {
-  float: left;
-  shape-outside: circle(50%);
-  clip-path: circle(50%);
-  width: 300px;
-  height: 300px;
+  width: 100%;
+  display: block;
   object-fit: cover;
-  margin: 20px;
+}
+
+.conference-text p {
+  margin-bottom: 1.25rem;
 }

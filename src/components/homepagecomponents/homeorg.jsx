@@ -1,4 +1,5 @@
 import React from "react";
+import {Link} from "react-router-dom";
 
 const BlogSection = () => {
   const blogs = [
@@ -9,6 +10,8 @@ const BlogSection = () => {
       department: "Department of Computer Science and Engineering",
       accreditation:
         "Approved by AICTE | Affiliated by JNTU, Kakinada | NBA Accredited (2nd Cycle) | NAAC Accredited | Agiripalli | Vijayawada | AP - India",
+      link:'/aboutnri',
+      lio:'About NRIIT'
     },
     {
       id: 2,
@@ -17,6 +20,8 @@ const BlogSection = () => {
         "Parvathaneni Brahmayya Siddhartha College of Arts & Science(Autonomous)",
       department: "Department of Computer Science Post-Graduate Centre",
       accreditation: "Moghalraja Puram | Vijayawada | AP - India",
+      link:'/aboutpb',
+      lio:'About PB'
     },
   ];
 
@@ -51,14 +56,14 @@ const BlogSection = () => {
                     {blog.accreditation}
                   </p>
                   {/* Learn More */}
-                  <a
-  href="#"
+                  <Link
+  to={blog.link}
   className="btn btn-primary fw-semibold mt-auto d-inline-flex align-items-center gap-2"
   style={{ backgroundColor: '#141E46', borderColor: '#141E46' }}
 >
-  Explore More
+  {blog.lio}
   <i className="bi bi-arrow-right" style={{ color: '#ffffff', fontSize: '1rem' }}></i>
-</a>
+</Link>
                 </div>
               </div>
             </div>
