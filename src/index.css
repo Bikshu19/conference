@@ -196,7 +196,7 @@ input:checked + .slider:before {
   left: 0;
   right: 0;
   bottom: 0;
-  background-color: #ff0000;
+  background-color: #595858;
   transition: background-color 0.4s;
   border-radius: 34px;
   cursor: pointer;

@@ -20,7 +20,7 @@ const footerSections = [
       { label: " Author Guidelines", href: "/authorguidelines" },
       { label: "Registration", href: "/registration" },
       { label: "Contact", href: "/contact" },
-      { label: "Accommodation", href: "/accommodation" }
+      { label: "Accommodation", href: "/accomidation" }
     ],
   },
   {
