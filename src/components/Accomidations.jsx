@@ -30,14 +30,15 @@ export default function HotelsStatsSection() {
       link: "https://www.fortunehotels.in/vijayawada-fortune-murali-park.dh.14",
     },
     {
-      name: "The Gateway Hotel",
-      image: "./hotel.webp",
-      description:
-        "Luxury hotel with river view rooms and exceptional hospitality.",
-      rating: "4.6 / 5",
-      reviews: "2,550 reviews",
-      link: "https://www.tajhotels.com/en-in/gateway/mg-road-vijayawada/",
-    },
+  name: "Minerva Grand ",
+  image: "./minverva.webp",   // add minerva.webp to your project
+  description:
+    "Popular upscale hotel located in the city centre. Offers stylish rooms, multi-cuisine restaurant, banquet facilities, gym and close access to MG Road and railway station.",
+  rating: "4.2 / 5",
+  reviews: "1,420 reviews",
+  link: "https://minervahotels.in/",
+},
+
     {
       name: "Quality Hotel DV Manor",
       image: "./dv.webp",
@@ -47,33 +48,37 @@ export default function HotelsStatsSection() {
       reviews: "925 reviews",
       link: "http://www.hoteldvmanor.com",
     },
-    {
-      name: "Hotel Green Park",
-      image: "./greenpark.webp",
-      description:
-        "Comfortable rooms with modern amenities and in-house restaurant.",
-      rating: "4.1 / 5",
-      reviews: "1,050 reviews",
-      link: "https://www.greenpark.co.in/vijayawada",
-    },
-    {
-      name: "Radisson Hotel Vijayawada",
-      image: "./radisson.webp",
-      description:
-        "Luxury stay with indoor pool, fitness center, and banquet facilities.",
-      rating: "4.5 / 5",
-      reviews: "2,200 reviews",
-      link: "https://www.radissonhotels.com/en-us/",
-    },
-    {
-      name: "Hotel Sangam",
-      image: "./sangam1.webp",
-      description:
-        "Budget-friendly hotel with comfortable stay and central location.",
-      rating: "4.0 / 5",
-      reviews: "800 reviews",
-      link: "https://www.hotelsangam.com/vijayawada",
-    },
+  {
+  name: "Hotel Manorama",
+  image: "./manorama.webp", // add manorama.webp image in your project
+  description:
+    "Well-known 3-star hotel located near the railway station in Vijayawada. Offers comfortable rooms, multi-cuisine restaurant, banquet halls and easy access to MG Road & Durga Temple.",
+  rating: "4.1 / 5",
+  reviews: "1,230 reviews",
+  link: "https://www.hotelmanorama.com/",
+},
+
+
+   {
+  name: "Swarna Palace",
+  image: "./swarna.webp",      // add swarna.webp in your public/assets folder
+  description:
+    "Well-known 3-star hotel located in the heart of Vijayawada. Offers modern rooms, in-house restaurant, banquet halls and easy access to MG Road and railway station.",
+  rating: "4.1 / 5",
+  reviews: "1,150 reviews",
+  link: "https://www.hotelswarnapalace.com/",
+},
+
+   {
+  name: "Vivanta Vijayawada",
+  image: "./vivanta.webp", // make sure to add this image in your project
+  description:
+    "Modern 5-star hotel located on MG Road. Features spacious rooms, rooftop restaurant, fitness centre and excellent connectivity to all major city locations.",
+  rating: "4.3 / 5",
+  reviews: "1,560 reviews",
+  link: "https://www.tajhotels.com/en-in/gateway/mg-road-vijayawada/",
+},
+
     {
       name: "Hotel Ilapuram",
       image: "./ilapuram.webp",
@@ -81,8 +86,18 @@ export default function HotelsStatsSection() {
         "A 3-star boutique hotel blending classic heritage with contemporary elegance. Offers comfortable stay with modern amenities, in-house vegetarian restaurant, conference facilities, and complimentary breakfast.",
       rating: "3.9 / 5",
       reviews: "950 reviews",
-      link: "https://www.yatra.com/hotels/hotels-in-vijayawada/hotel-ilapuram",
+      link: "https://www.goibibo.com/hotels/ilapuram-hotel-in-vijayawada-5715766181567320738",
     },
+    {
+  name: "Hotel Aira",
+  image: "./aira.webp", // add aira.webp to your images folder
+  description:
+    "Contemporary 3-star hotel located near Benz Circle. Features stylish rooms, free Wi-Fi, complimentary breakfast and quick access to MG Road and shopping areas.",
+  rating: "4.2 / 5",
+  reviews: "1,040 reviews",
+  link: "https://www.airahotel.com/",
+},
+
   ];
 
   return (

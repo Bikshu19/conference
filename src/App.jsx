@@ -12,7 +12,7 @@ import Aboutcon from "./pages/aboutconference";
 import Aboutvij from "./pages/aboutvij";
 import Authorguidelines from "./pages/authorguidelines";
 import Registration from "./pages/registration";
-import Contact from "./pages/contact";
+import Contact from "./pages/contcat";
 import Gallery from "./pages/gallery";
 import Accomidation from "./pages/Accomidation";
 
