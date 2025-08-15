@@ -14,6 +14,7 @@ import Authorguidelines from "./pages/authorguidelines";
 import Registration from "./pages/registration";
 import Contact from "./pages/contact";
 import Gallery from "./pages/gallery";
+import Accomidation from "./pages/Accomidation";
 
 function App() {
   return (
@@ -32,6 +33,7 @@ function App() {
           <Route path="/aboutvij" element={<Aboutvij />} />
           <Route path="/authorguidelines" element={<Authorguidelines />} />
           <Route path="/registration" element={<Registration />} />
+          <Route path="/accomidation" element={<Accomidation />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </BrowserRouter>
