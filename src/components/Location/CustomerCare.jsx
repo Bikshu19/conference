@@ -40,7 +40,7 @@ const CustomerCare = () => {
 
       <section style={{ textAlign: "left" }}>
         <p>
-          <strong>Email:</strong> support@nriinstitute.com
+          <strong>Email:</strong> quadnext@nriit.edu.in
         </p>
         <p>
           <strong>Working Hours:</strong> Mon - Sat, 9 AM to 4:30 PM IST

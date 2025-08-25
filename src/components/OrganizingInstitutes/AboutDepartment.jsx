@@ -3,27 +3,45 @@ import React, { useState } from "react";
 const hods = [
   {
     id: 1,
-    name: "Dr. Suneetha",
-    profession: "Head of Department, CSE",
-    description:
-      "Dr. Sunitha has over 15 years of experience in computer science education and research, specializing in AI and Machine Learning.",
-    image: "/Nri/cse.jpeg",
+    name: "Dr K V Sambasiva Rao",
+    profession: "Professor & Dean, CSE & Allied, NRIIT",
+
+    image: "/faculty/dean.jpg",
   },
   {
     id: 2,
-    name: "Dr. Bh Dasaradh Ram",
-    profession: "Head of Department, CS-AIML",
-    description:
-      "Dr. Ram has been instrumental in developing the AI curriculum and has published numerous papers in top-tier journals.",
+    name: "Dr D Sunitha",
+    profession: "Head of Department, CSE",
+
     image: "/Nri/csm.webp",
   },
   {
     id: 3,
+    name: "Dr B Dasaradha Ram",
+    profession: "Head of Department, CS-AIML &  Professor",
+
+    image: "/faculty/csm.JPG",
+  },
+  {
+    id: 4,
     name: "Dr.Ch V Murali Krishna",
-    profession: "Head of Department, CS-DSc",
-    description:
-      "Dr. Krishna is known for his work in Data Science and has collaborated with various industries on data-driven projects.",
+    profession: "Head of Department, CS-DSc & Associate Professor",
+
+    image: "/faculty/csd.jpeg",
+  },
+  {
+    id: 5,
+    name: "Dr.P Rajendra Kumar",
+    profession: "Head of Department, AIML & Professor",
+
     image: "/Nri/csd.webp",
+  },
+  {
+    id: 6,
+    name: "Dr.Rajendra Prasad Jaladi",
+    profession: "Head of Department, IT & Professor",
+
+    image: "/faculty/it.jpeg",
   },
 ];
 
@@ -127,65 +145,160 @@ const AboutDepartment = () => {
             padding: "30px 0 40px",
             marginBottom: "30px",
             display: "flex",
-            justifyContent: "space-between",
-            gap: "20px",
+            flexDirection: "column",
+            gap: "30px",
           }}
         >
-          {hods.map(({ id, name, profession, description, image }) => (
-            <div
-              key={id}
-              style={{
-                width: "33%",
-                boxSizing: "border-box",
-                padding: "0 10px",
-                textAlign: "center",
-              }}
-            >
-              <div
-                style={{
-                  width: 80,
-                  height: 80,
-                  overflow: "hidden",
-                  borderRadius: "50%",
-                  margin: "0 auto 15px",
-                  boxShadow: "0 0 8px rgba(0,0,0,0.15)",
-                }}
-              >
-                <img
-                  src={image}
-                  alt={name}
+            {/* First Row */} {" "}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              gap: "20px",
+            }}
+          >
+               {" "}
+            {hods
+              .slice(0, 3)
+              .map(({ id, name, profession, description, image }) => (
+                <div
+                  key={id}
                   style={{
-                    width: "100%",
-                    height: "100%",
-                    objectFit: "cover",
+                    width: "33%",
+                    boxSizing: "border-box",
+                    padding: "0 10px",
+                    textAlign: "center",
                   }}
-                />
-              </div>
-              <h2
-                style={{
-                  fontSize: "1.25rem",
-                  marginBottom: "6px",
-                  color: "#2c3e50",
-                }}
-              >
-                {name}
-              </h2>
-              <h3
-                style={{
-                  fontSize: "1rem",
-                  fontWeight: "500",
-                  color: "#2980b9",
-                  fontStyle: "italic",
-                  marginBottom: "8px",
-                }}
-              >
-                {profession}
-              </h3>
-              <p style={{ color: "#556677", fontSize: "0.95rem" }}>
-                {description}
-              </p>
-            </div>
-          ))}
+                >
+                          {/* ...content as before... */}       {" "}
+                  <div
+                    style={{
+                      width: 80,
+                      height: 80,
+                      overflow: "hidden",
+                      borderRadius: "50%",
+                      margin: "0 auto 15px",
+                      boxShadow: "0 0 8px rgba(0,0,0,0.15)",
+                    }}
+                  >
+                             {" "}
+                    <img
+                      src={image}
+                      alt={name}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                           {" "}
+                  </div>
+                         {" "}
+                  <h2
+                    style={{
+                      fontSize: "1.25rem",
+                      marginBottom: "6px",
+                      color: "#2c3e50",
+                    }}
+                  >
+                              {name}       {" "}
+                  </h2>
+                         {" "}
+                  <h3
+                    style={{
+                      fontSize: "1rem",
+                      fontWeight: "500",
+                      color: "#2980b9",
+                      fontStyle: "italic",
+                      marginBottom: "8px",
+                    }}
+                  >
+                              {profession}       {" "}
+                  </h3>
+                         {" "}
+                  <p style={{ color: "#556677", fontSize: "0.95rem" }}>
+                              {description}       {" "}
+                  </p>
+                       {" "}
+                </div>
+              ))}
+             {" "}
+          </div>
+            {/* Second Row */} {" "}
+          <div
+            style={{
+              display: "flex",
+              justifyContent: "space-between",
+              gap: "20px",
+            }}
+          >
+               {" "}
+            {hods
+              .slice(3, 6)
+              .map(({ id, name, profession, description, image }) => (
+                <div
+                  key={id}
+                  style={{
+                    width: "33%",
+                    boxSizing: "border-box",
+                    padding: "0 10px",
+                    textAlign: "center",
+                  }}
+                >
+                          {/* ...content as before... */}       {" "}
+                  <div
+                    style={{
+                      width: 80,
+                      height: 80,
+                      overflow: "hidden",
+                      borderRadius: "50%",
+                      margin: "0 auto 15px",
+                      boxShadow: "0 0 8px rgba(0,0,0,0.15)",
+                    }}
+                  >
+                             {" "}
+                    <img
+                      src={image}
+                      alt={name}
+                      style={{
+                        width: "100%",
+                        height: "100%",
+                        objectFit: "cover",
+                      }}
+                    />
+                           {" "}
+                  </div>
+                         {" "}
+                  <h2
+                    style={{
+                      fontSize: "1.25rem",
+                      marginBottom: "6px",
+                      color: "#2c3e50",
+                    }}
+                  >
+                              {name}       {" "}
+                  </h2>
+                         {" "}
+                  <h3
+                    style={{
+                      fontSize: "1rem",
+                      fontWeight: "500",
+                      color: "#2980b9",
+                      fontStyle: "italic",
+                      marginBottom: "8px",
+                    }}
+                  >
+                              {profession}       {" "}
+                  </h3>
+                         {" "}
+                  <p style={{ color: "#556677", fontSize: "0.95rem" }}>
+                              {description}       {" "}
+                  </p>
+                       {" "}
+                </div>
+              ))}
+             {" "}
+          </div>
         </div>
 
         {/* Department About Section */}

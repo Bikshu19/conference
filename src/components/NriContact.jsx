@@ -22,7 +22,10 @@ export default function Contact() {
           <p className="mb-3">Krishna District, Andhra Pradesh, India</p>
           <p className="mb-3">
             <strong>Email:</strong>{" "}
-            <a href="mailto:icraic2it@nriit.edu.in">quadnext@nriit.edu.in</a>
+            <a href="mailto:quadnext@nriit.edu.in">quadnext@nriit.edu.in </a>
+            <br></br>
+            <strong>Email:</strong>{" "}
+            <a href="mailto:kvsrao@nriit.edu.in">kvsrao@nriit.edu.in </a>
           </p>
           <p className="mb-3">
             <strong>URL:</strong>{" "}
