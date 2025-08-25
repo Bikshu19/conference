@@ -46,15 +46,6 @@ function Hello() {
             </div>
             <div className="col-lg-6">
               <p className="lead text-muted">
-<<<<<<< HEAD
-                Vijayawada, also called Bezawada, is a prominent city in Andhra
-                Pradesh situated on the banks of the Krishna River. It is famous
-                for the Kanaka Durga Temple, historic sites, and bustling
-                markets. Known as the Business Capital of Andhra Pradesh, it is
-                a key center for trade, education, and transport. The city hosts
-                vibrant festivals and is surrounded by scenic hills and fertile
-                agricultural lands.
-=======
                  Vijayawada, also called Bezawada, is a prominent city
                 in Andhra Pradesh situated on the banks of the Krishna River. It
                 is famous for the Kanaka Durga Temple, historic sites, and
@@ -62,7 +53,6 @@ function Hello() {
                 Pradesh, it is a key center for trade, education, and transport.
                 The city hosts vibrant festivals and is surrounded by scenic
                 hills and fertile agricultural lands.
->>>>>>> bd7d81248ca6f8fcf23c786b0056ce776c1f2003
               </p>
             </div>
           </div>
