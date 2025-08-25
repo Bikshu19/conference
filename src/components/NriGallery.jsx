@@ -8,7 +8,7 @@ export default function HeroSection() {
     paragraph: `
       To encourage meaningful contributions and promote quality research,
       the conference will recognize outstanding presentations through
-      awards. Based on evaluations by the committee and the discretion of
+      awards. An evaluation committe of previously organized conference and the discretion of
       the Conference Chair, the Best Presentation Award will be given to
       the most inspiring, impactful, and professionally delivered talk.
       The selection will be made considering both the presentation scores
@@ -19,12 +19,8 @@ export default function HeroSection() {
   const teluguText = {
     heading: "Awards",
     paragraph: `
-      అర్థవంతమైన కృషిని ప్రోత్సహించడానికి మరియు నాణమైన పరిశోధనను ప్రోత్సహించడానికి,
-      కాంక్రెన్స్ అద్భుతమైన ప్రదర్శనలను అవార్డుల ద్వారా గుర్తిస్తుంది.
-      కమిటీ యొక్క మూల్యాంకనాల మరియు కాన్ఫరెన్స్ చైర్ యొక్క నిర్ణయ ప్రకారం,
-      ఉత్తమ ప్రదర్శన అవార్డు అత్యంత ప్రేరణాత్మక, ప్రభావవంతమైన మరియు
-      వృత్తిపరంగా సమర్పించబడిన ప్రసంగానికి ఇవ్వబడుతుంది.
-      ఎంపిక ప్రదర్శన స్కోర్లు మరియు సమర్పించిన పత్రం నాణ్యతను పరిగణనలోకి తీసుకుని చేయబడుతుంది.
+      అర్ధవంతమైన సహకారాన్ని ప్రోత్సహించడానికి మరియు నాణ్యమైన పరిశోధనలను ప్రోత్సహించడానికి, సదస్సు అవార్డుల ద్వారా అత్యుత్తమ ప్రదర్శనలను గుర్తిస్తుంది. గతంలో నిర్వహించిన కాన్ఫరెన్స్ యొక్క మూల్యాంకన కమిటీ మరియు కాన్ఫరెన్స్ చైర్ యొక్క అభీష్టానుసారం, అత్యంత స్ఫూర్తిదాయకమైన, ప్రభావవంతమైన మరియు వృత్తిపరంగా అందించిన ప్రసంగానికి ఉత్తమ ప్రదర్శన అవార్డు ఇవ్వబడుతుంది.
+సమర్పించిన కాగితం యొక్క ప్రదర్శన స్కోర్లు మరియు నాణ్యత రెండింటినీ పరిగణనలోకి తీసుకుని ఎంపిక చేయబడుతుంది.
     `,
   };
 

@@ -21,12 +21,11 @@ const NriLocation = () => {
           style={{ flexDirection: "column", alignItems: "center" }}
         >
           {/* Address Section in white space */}
-          <div style={{ marginBottom: "100px", textAlign: "center" }}>
+          <div style={{ marginBottom: "100px", textAlign: "center",marginTop:'160px' }}>
             <h2
               style={{
                 fontSize: "30px",
                 fontWeight: "700",
-                marginBottom: "110px",
                 color: "#1b1b1b",
               }}
             >
