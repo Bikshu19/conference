@@ -9,7 +9,7 @@ const ImportantNote = () => {
         className="shadow-lg border-0 p-4 mx-auto"
         style={{
           maxWidth: "800px",
-          background: "linear-gradient(135deg, #53cac8ff 0%, #b3caffff 100%)",
+          background: "linear-gradient(135deg, #ffb3b3ff 0%, #ffb3b3ff 100%)",
           borderRadius: "12px",
         }}
       >
