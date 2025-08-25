@@ -10,7 +10,7 @@ const content = {
 };
 
 const AboutPb = () => {
-  const fullText = "PARVATHANENI BRAHMAYYA SIDDHARTHA COLLEGE  ";
+  const fullText = "PARVATHANENI BRAHMAYYA SIDDHARTHA COLLEGE OF ARTS & SCIENCE ";
   const [displayedText, setDisplayedText] = useState("");
   const [lang, setLang] = useState("en"); // default English
   const [fade, setFade] = useState(true);

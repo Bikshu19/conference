@@ -32,10 +32,10 @@ export default function ProductDetail() {
           {/* Product Image */}
           <div className="col-lg-6 text-center">
             <img
-              src="./s3.webp"
+              src="./conferencetopicspics/papers.jpg"
               alt="product"
               className="img-fluid rounded shadow"
-              style={{ maxHeight: "500px", objectFit: "cover" }}
+              style={{ maxHeight: "350px", objectFit: "cover" }}
             />
           </div>
 
