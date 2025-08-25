@@ -61,7 +61,7 @@ function HomepageComponents() {
             >
               <h1 className="fw-bold fs-1" style={{ color: '#141E46' }}>QUADNEXT-2026</h1>
               <h2 className="fw-bold fs-1" style={{color:'#141E46'}}>International Conference</h2>
-              <h4 className="fw-bold">On</h4>
+              <h4 className="fw-bold" style={{color:'#141E46'}}>On</h4>
               <Hometext />
               <Hometext1 />
               <Hometext2 />
