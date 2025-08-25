@@ -61,7 +61,45 @@ export default function ConferenceFeatures() {
       Director (Academics), NRI Institute of Technology (NRIIT), Agiripalli, Vijayawada
     </p>
   </div>
+{/* card3*/}
+  <div className="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div
+      className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm"
+      style={{ width: "120px", height: "120px" }}
+    >
+      <img
+        src="./director.jpg"
+        alt="Prof Gutta Sambasivarao"
+        className="img-fluid"
+        style={{ objectFit: "cover", width: "100%", height: "100%" }}
+      />
+    </div>
+    <h5 className="fw-bold" style={{"color":"#898AC4"}}>Prof Gutta Sambasivarao</h5>
+    <p className="text-secondary">
+      Director (Academics), NRI Institute of Technology (NRIIT), Agiripalli, Vijayawada
+    </p>
+  </div>
+
+  <div className="col-lg-4 col-md-6 col-sm-12 text-center">
+    <div
+      className="rounded-circle overflow-hidden d-flex align-items-center justify-content-center mx-auto mb-3 shadow-sm"
+      style={{ width: "120px", height: "120px" }}
+    >
+      <img
+        src="./director.jpg"
+        alt="Prof Gutta Sambasivarao"
+        className="img-fluid"
+        style={{ objectFit: "cover", width: "100%", height: "100%" }}
+      />
+    </div>
+    <h5 className="fw-bold" style={{"color":"#898AC4"}}>Prof Gutta Sambasivarao</h5>
+    <p className="text-secondary">
+      Director (Academics), NRI Institute of Technology (NRIIT), Agiripalli, Vijayawada
+    </p>
+  </div>
+
 </div>
+
 
 
         {/* View More Button */}
