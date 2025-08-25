@@ -46,7 +46,6 @@ function Hello() {
             </div>
             <div className="col-lg-6">
               <p className="lead text-muted">
-<<<<<<< HEAD
                 Vijayawada, also called Bezawada, is a prominent city in Andhra
                 Pradesh situated on the banks of the Krishna River. It is famous
                 for the Kanaka Durga Temple, historic sites, and bustling
@@ -54,15 +53,6 @@ function Hello() {
                 a key center for trade, education, and transport. The city hosts
                 vibrant festivals and is surrounded by scenic hills and fertile
                 agricultural lands.
-=======
-                 Vijayawada, also called Bezawada, is a prominent city
-                in Andhra Pradesh situated on the banks of the Krishna River. It
-                is famous for the Kanaka Durga Temple, historic sites, and
-                bustling markets. Known as the Business Capital of Andhra
-                Pradesh, it is a key center for trade, education, and transport.
-                The city hosts vibrant festivals and is surrounded by scenic
-                hills and fertile agricultural lands.
->>>>>>> bd7d81248ca6f8fcf23c786b0056ce776c1f2003
               </p>
             </div>
           </div>
@@ -172,91 +162,92 @@ function Hello() {
 
       {/* Extra Section - Raw Denim Heirloom Man Braid */}
       <section className="text-secondary py-2">
-  <div className="container py-5">
-    {/* Header */}
-    <div className="text-center mb-5">
-      <h1 className="h2 fw-medium mb-3" style={{ color: "#0b2743ff" }}>
-        How to Reach
-      </h1>
-      <p className="lead mx-auto" style={{ maxWidth: 700 }}>
-        Vijayawada is well connected to the rest of India by rail, road, and air.
-        Vijayawada International Airport, 13.5 km away from the main city, is the
-        principal airport that connects Vijayawada to the rest of India, as well as
-        the world. Vijayawada is well connected with regular flights to New Delhi,
-        Mumbai, Hyderabad, Chennai, Bengaluru, Visakhapatnam, Tirupati and many
-        more cities. Many airline operators offer their services such as Air India,
-        SpiceJet, TrueJet, Indigo etc.
-      </p>
-      <p className="lead mx-auto" style={{ maxWidth: 700 }}>
-        Vijayawada Railway Junction is connected with all parts of the country
-        through its excellent railway network. Vijayawada is situated along the
-        Chennai-Howrah, and Chennai-Delhi rail route, making it easily accessible.
-        Regular bus services run to and from the city of Vijayawada from most parts
-        of the country, operated by both private and government agencies.
-      </p>
-    </div>
+        <div className="container py-5">
+          {/* Header */}
+          <div className="text-center mb-5">
+            <h1 className="h2 fw-medium mb-3" style={{ color: "#0b2743ff" }}>
+              How to Reach
+            </h1>
+            <p className="lead mx-auto" style={{ maxWidth: 700 }}>
+              Vijayawada is well connected to the rest of India by rail, road,
+              and air. Vijayawada International Airport, 13.5 km away from the
+              main city, is the principal airport that connects Vijayawada to
+              the rest of India, as well as the world. Vijayawada is well
+              connected with regular flights to New Delhi, Mumbai, Hyderabad,
+              Chennai, Bengaluru, Visakhapatnam, Tirupati and many more cities.
+              Many airline operators offer their services such as Air India,
+              SpiceJet, TrueJet, Indigo etc.
+            </p>
+            <p className="lead mx-auto" style={{ maxWidth: 700 }}>
+              Vijayawada Railway Junction is connected with all parts of the
+              country through its excellent railway network. Vijayawada is
+              situated along the Chennai-Howrah, and Chennai-Delhi rail route,
+              making it easily accessible. Regular bus services run to and from
+              the city of Vijayawada from most parts of the country, operated by
+              both private and government agencies.
+            </p>
+          </div>
 
-    {/* Attractions */}
-    <h1
-      className="h2 fw-medium mb-3 text-center"
-      style={{ color: "#0b2743ff" }}
-    >
-      Few attractions in and around Vijayawada
-    </h1>
+          {/* Attractions */}
+          <h1
+            className="h2 fw-medium mb-3 text-center"
+            style={{ color: "#0b2743ff" }}
+          >
+            Few attractions in and around Vijayawada
+          </h1>
 
-    {/* Features Grid */}
-    <div className="row g-3 justify-content-center mt-4">
-      {[
-        "Akkanna Madanna Caves",
-        "Amaravati Shrine",
-        "Bhavani Island",
-        "Gandhi Hill",
-        "Gunadala Matha Shrine",
-        "Hailand",
-        "Hazratbal Mosque",
-        "Hinkar Thirtha Jain Temple",
-        "Kanaka Durga Temple",
-        "Kolleru Lake",
-        "Kondapalli Fort",
-        "Kuchipudi Siddhendra Kala Kshetram",
-        "Mangalagiri Panakala Swami Shrine",
-        "Manginapudi Beach",
-        "Mogalarajapuram Caves",
-        "Pavitra Sangamam",
-        "Prakasam Barrage",
-        "Rajiv Gandhi Park",
-        "Scrap Sculpture Park",
-        "Subramanya Swami Temple",
-        "Undavalli Caves",
-        "Uppalapadu Bird Sanctuary",
-        "Victoria Jubilee Museum (Bapu Museum)",
-      ].map((feature, idx) => (
-        <div className="col-sm-6 col-md-4 col-lg-3" key={idx}>
-          <div className="d-flex flex-column align-items-center justify-content-center p-4 rounded h-100 text-center">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              width={32}
-              height={32}
-              fill="none"
-              stroke="currentColor"
-              strokeWidth={2}
-              strokeLinecap="round"
-              strokeLinejoin="round"
-              className="text-primary mb-2"
-            >
-              <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
-              <path d="M22 4L12 14.01l-3-3" />
-            </svg>
-            <span className="fw-medium" style={{ color: "#0b2743ff" }}>
-              {feature}
-            </span>
+          {/* Features Grid */}
+          <div className="row g-3 justify-content-center mt-4">
+            {[
+              "Akkanna Madanna Caves",
+              "Amaravati Shrine",
+              "Bhavani Island",
+              "Gandhi Hill",
+              "Gunadala Matha Shrine",
+              "Hailand",
+              "Hazratbal Mosque",
+              "Hinkar Thirtha Jain Temple",
+              "Kanaka Durga Temple",
+              "Kolleru Lake",
+              "Kondapalli Fort",
+              "Kuchipudi Siddhendra Kala Kshetram",
+              "Mangalagiri Panakala Swami Shrine",
+              "Manginapudi Beach",
+              "Mogalarajapuram Caves",
+              "Pavitra Sangamam",
+              "Prakasam Barrage",
+              "Rajiv Gandhi Park",
+              "Scrap Sculpture Park",
+              "Subramanya Swami Temple",
+              "Undavalli Caves",
+              "Uppalapadu Bird Sanctuary",
+              "Victoria Jubilee Museum (Bapu Museum)",
+            ].map((feature, idx) => (
+              <div className="col-sm-6 col-md-4 col-lg-3" key={idx}>
+                <div className="d-flex flex-column align-items-center justify-content-center p-4 rounded h-100 text-center">
+                  <svg
+                    xmlns="http://www.w3.org/2000/svg"
+                    width={32}
+                    height={32}
+                    fill="none"
+                    stroke="currentColor"
+                    strokeWidth={2}
+                    strokeLinecap="round"
+                    strokeLinejoin="round"
+                    className="text-primary mb-2"
+                  >
+                    <path d="M22 11.08V12a10 10 0 11-5.93-9.14" />
+                    <path d="M22 4L12 14.01l-3-3" />
+                  </svg>
+                  <span className="fw-medium" style={{ color: "#0b2743ff" }}>
+                    {feature}
+                  </span>
+                </div>
+              </div>
+            ))}
           </div>
         </div>
-      ))}
-    </div>
-  </div>
-</section>
-
+      </section>
     </div>
   );
 }

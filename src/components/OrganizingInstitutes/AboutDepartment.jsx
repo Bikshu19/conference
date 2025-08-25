@@ -13,7 +13,7 @@ const hods = [
     name: "Dr D Sunitha",
     profession: "Head of Department, CSE",
 
-    image: "/Nri/csm.webp",
+    image: "/Nri/cse.jpeg",
   },
   {
     id: 3,
@@ -34,7 +34,7 @@ const hods = [
     name: "Dr.P Rajendra Kumar",
     profession: "Head of Department, AIML & Professor",
 
-    image: "/Nri/csd.webp",
+    image: "/faculty/aiml.jpeg",
   },
   {
     id: 6,
@@ -80,7 +80,7 @@ const AboutDepartment = () => {
         flexDirection: "column",
         justifyContent: "center",
         alignItems: "center",
-        padding: "40px 20px",
+        padding: "20px",
       }}
     >
       {/* Translate button fixed top-right */}
@@ -136,17 +136,17 @@ const AboutDepartment = () => {
             overflow: "hidden",
           }}
         >
-          About the Department
+          About the Organizing Departments
         </h1>
 
         {/* HODs Section */}
         <div
           style={{
             padding: "30px 0 40px",
-            marginBottom: "30px",
+            marginBottom: "5px",
             display: "flex",
             flexDirection: "column",
-            gap: "30px",
+            gap: "5px",
           }}
         >
             {/* First Row */} {" "}

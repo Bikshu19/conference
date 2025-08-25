@@ -124,11 +124,17 @@ const AboutCollege = () => {
             color: "#141E46",
           }}
         >
-          About Our College
+          About NRIIT
         </h2>
 
         {/* Single Toggle Button */}
-        <div style={{ display: "flex", justifyContent: "center", marginBottom: "30px" }}>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            marginBottom: "30px",
+          }}
+        >
           <button
             onClick={toggleLang}
             style={{

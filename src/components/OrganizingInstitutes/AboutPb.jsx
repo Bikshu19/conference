@@ -113,7 +113,7 @@ const AboutPb = () => {
             color: "#141E46",
           }}
         >
-          About Our College
+          About PB Siddhartha
         </h2>
 
         {/* Toggle Button Under Heading */}
