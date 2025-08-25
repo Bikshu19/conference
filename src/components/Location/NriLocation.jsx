@@ -29,7 +29,7 @@ const NriLocation = () => {
                 color: "#1b1b1b",
               }}
             >
-              Address
+               Venue
             </h2>
             {addressLines.map((line, i) => (
               <div

@@ -89,6 +89,57 @@ export default function HotelsStatsSection() {
       link: "https://www.goibibo.com/hotels/ilapuram-hotel-in-vijayawada-5715766181567320738",
     },
     {
+  name: "Hotel Sannidhi (The Boutique Hotel)",
+  image: "./sannidhi.webp", // you can replace with actual image path or filename
+  description:
+    "A 3-star boutique property located in Gandhi Nagar, blending modest comforts with functional value. Offers clean, well-maintained rooms, on-site restaurant, banquet hall for events, free parking, air-conditioning, Wi-Fi, 24-hour front desk, and daily breakfast.",
+  rating: "3.8 / 5",
+  reviews: "114 reviews (MMT) + 531 ratings (Justdial)",
+  link: "https://www.hotelsannidhi.com/"
+},
+
+    {
+  name: "Hotel Capital Luxury Suites",
+  image: "./luxury.webp", 
+  description:
+    "A contemporary 3-star hotel situated near Benz Circle, designed for both business and leisure travelers. The property offers stylish rooms with modern interiors, LED TVs, work desks, and comfortable bedding. Guests can enjoy an in-house multi-cuisine restaurant, conference facilities, complimentary Wi-Fi, and 24-hour front desk service. Its central location provides easy access to shopping, dining, and major landmarks in Vijayawada.",
+  rating: "4.2 / 5",
+  reviews: "310 ratings (MMT)",
+  link: "https://www.booking.com/hotel/in/capital-luxury-suites.html"
+},
+
+
+    {
+  name: "Treebo C Plaza",
+  image: "./tree.webp",
+  description:
+    "A budget-friendly 3-star hotel on Bandar Road featuring AC rooms with free Wi-Fi, TV, and essential amenities. Guests are offered complimentary vegetarian breakfast, banquet facilities for small events, and easy access to Vijayawada’s business and shopping hubs.",
+  rating: "4.2 / 5",
+  reviews: "31 guest ratings (Goibibo)",
+  link: "https://www.treebo.com/hotels-in-vijayawada/treebo-c-plaza-mg-road-bandar-road-503/"
+},
+
+    {
+  name: "Hotel Pride Madhava",
+  image: "./madhava.webp",
+  description:
+    "A refined business boutique hotel just off Eluru Road in Srinagar Colony, offering well-appointed rooms with Wi-Fi, LED smart TVs, minibar, and tea/coffee makers. Guests benefit from services like valet parking, 24-hour room service, power backup, laundry, and two banquet halls—ideal for business or event stays.",
+  rating: "3.9 – 4.1 / 5",
+  reviews: "83 (MMT) + 1,607 (Justdial)",
+  link: "https://www.makemytrip.com/hotels/hotel_pride_madhava-details-vijaywada.html"
+},
+
+    {
+  name: "Hotel Centre Side",
+  image: "./centre.webp",
+  description:
+    "A centrally located 3-star boutique hotel near Eluru Road, featuring stylish AC rooms with Wi-Fi and in-house dining. Offers modern conveniences such as banquet and boardroom facilities, free parking, and warm, attentive service—ideal for both business and family stays.",
+  rating: "4.3 / 5",
+  reviews: "586 guest ratings (MMT) + ~1,870 reviews (Google/Adanione)",
+  link: "https://www.makemytrip.com/hotels/hotel_centre_side-details-vijaywada.html"
+},
+
+    {
   name: "Hotel Aira",
   image: "./aira.webp", // add aira.webp to your images folder
   description:
