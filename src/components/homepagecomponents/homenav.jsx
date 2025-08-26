@@ -43,13 +43,11 @@ function Homenav() {
           data-bs-target="#navbarSupportedContent"
         >
           <span
-  className="navbar-toggler-icon"
-  style={{
-    backgroundImage: `url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23141E46' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`
-  }}
-/>
-
-
+            className="navbar-toggler-icon"
+            style={{
+              backgroundImage: `url("data:image/svg+xml;charset=utf8,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3E%3Cpath stroke='%23141E46' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3E%3C/svg%3E")`,
+            }}
+          />
         </button>
 
         {/* Menu */}
@@ -61,7 +59,6 @@ function Homenav() {
               justifyContent: "center",
               gap: "1rem",
             }}
-            
           >
             {/* About */}
             <li className="nav-item dropdown me-4">
@@ -201,7 +198,6 @@ function Homenav() {
               </ul>
             </li>
 
-            
             {/* Accommodation */}
             <li className="nav-item me-4">
               <Link
