@@ -41,7 +41,7 @@ function HomepageComponents() {
             <div
               className="position-absolute top-0 start-0 w-100 h-100"
               style={{
-                background: "linear-gradient(to bottom, #0000000c, rgba(255, 255, 255, 0.31))",
+                background: "linear-gradient(to bottom, #dbdadac8, rgba(219, 216, 216, 0.5))",
                 pointerEvents: "none",
               }}
             />
@@ -70,7 +70,7 @@ function HomepageComponents() {
 </h1>
 
               <h2 className="fw-bold fs-1" style={{color:'#ffee00ff',textShadow: '2px 2px 4px #000000'}}>International Conference</h2>
-              <h4 className="fw-bold" style={{color:'#ffee00ff',textShadow: '2px 2px 4px #000000'}}>On</h4>
+              <h4 className="fw-bold" style={{color:'#ffee00ff',textShadow: '2px 2px 4px #0b0b0bff'}}>On</h4>
               <Hometext />
               <Hometext1 />
               <Hometext2 />

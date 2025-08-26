@@ -59,7 +59,7 @@ const conferenceSteps = [
 ];
 
 const stepColors = [
-    "yellow",
+  "yellow",
   "magenta",
   "limegreen",
   "cyan",
@@ -117,15 +117,14 @@ export default function ConferenceRegistrationTimeline() {
         <h2 className="fw-bold mb-1">
           CONFERENCE REGISTRATION <span className="fw-normal text-muted"></span>
         </h2>
-         <p style={{marginTop:'20px'}}>
-          <strong style={{color:'red'}}>Eligibility:</strong> Faculty members, research scholars,
-          postgraduate students from AICTE-approved institutions, and industry
-          professionals are eligible to apply.
+        <p style={{ marginTop: "20px" }}>
+          <strong style={{ color: "red" }}>Eligibility:</strong> Faculty members,
+          research scholars, postgraduate students from AICTE-approved
+          institutions, and industry professionals are eligible to apply.
         </p>
         <h4 className="mb-5">
-          Registration Fee:<strong style={{color:'red'}}> Nil</strong>
+          Registration Fee:<strong style={{ color: "red" }}> Nil</strong>
         </h4>
-       
       </div>
 
       <div className="row justify-content-center align-items-end position-relative timeline-row">
@@ -157,19 +156,28 @@ export default function ConferenceRegistrationTimeline() {
                   display: "flex",
                   flexDirection: "column",
                   justifyContent: "center",
+                  alignItems: "center", // center alignment
                   position: "relative",
                   fontSize: "0.9rem",
                   width: "100%",
                   maxWidth: "260px",
+                  textAlign: "center", // center text
                 }}
               >
                 <div
                   className="timeline-card-year mb-1"
-                  style={{  fontWeight: 600, fontSize: "0.8rem", color: "black" }}
+                  style={{
+                    fontWeight: 700,
+                    fontSize: "0.9rem",
+                    color: "black",
+                  }}
                 >
                   Step {idx + 1}
                 </div>
-                <div className="timeline-card-content fw-medium text-start" style={{ color: "#222" }}>
+                <div
+                  className="timeline-card-content fw-bold"
+                  style={{ color: "#222" }}
+                >
                   <strong>{step.title}</strong>
                   <br />
                   {step.description}

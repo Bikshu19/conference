@@ -10,7 +10,7 @@ export default function AboutConference() {
 
   const content = {
     en: [
-      `3rd International Conference on Quantum AI and Deep-Tech Innovations
+      `Third International Conference on Quantum AI and Deep-Tech Innovations
       for Next-Gen Intelligence (QUADNEXT-2026) is scheduled from 
       February 6–7, 2026 at NRI Institute of Technology, Agiripalli, Vijayawada, India.`,
       `This event brings together academicians, research scholars, industry professionals,
@@ -82,6 +82,69 @@ export default function AboutConference() {
           </div>
         </div>
       </div>
+  <section className="text-secondary py-5">
+  <div className="container">
+    <div className="row gy-5 justify-content-center">
+      
+      {/* First card (left) */}
+      <div className="col-md-6 d-flex justify-content-center">
+        <div className="card shadow-sm mx-2" style={{ maxWidth: "800px" }}>
+          <div className="row g-0 align-items-center">
+            <div className="col-md-6">
+              <h1>1st conference</h1>
+              <img
+                src="./logo1c.png"
+                className="img-fluid w-100 h-100 object-fit-cover rounded-4"
+                alt="hero"
+              />
+            </div>
+            <div className="col-md-6 d-flex flex-column justify-content-center text-center p-4">
+              <div className="d-flex flex-column justify-content-center align-items-center gap-3">
+                <a href="./reports/1report.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg w-75 rounded-3"  style={{backgroundColor:"#141E46"}}>
+                  Report
+                </a>
+                <a href="./reports/1sov.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-lg w-75 rounded-3" style={{backgroundColor:"#141E46"}}>
+                  Souvenir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* Second card (right) */}
+      <div className="col-md-6 d-flex justify-content-center">
+        <div className="card shadow-sm mx-2" style={{ maxWidth: "800px" }}>
+          <div className="row g-0 align-items-center">
+            <div className="col-md-6">
+              <img
+                src="./logo2c.png"
+                className="img-fluid w-100 h-100 object-fit-cover rounded-4"
+                alt="hero"
+              />
+            </div >
+            <div className="col-md-6 d-flex flex-column justify-content-center text-center p-4" >
+              <div className="d-flex flex-column justify-content-center align-items-center gap-3">
+                <a href="./reports/2report.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-primary btn-lg w-75 rounded-3" style={{backgroundColor:"#141E46"}}>
+                  Report
+                </a>
+                <a href="./reports/2sov.pdf" target="_blank" rel="noopener noreferrer" className="btn btn-dark btn-lg w-75 rounded-3" style={{backgroundColor:"#141E46"}}>
+                  Souvenir
+                </a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+
+
+
     </section>
+    
   );
 }
