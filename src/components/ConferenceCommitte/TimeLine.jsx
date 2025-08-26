@@ -448,9 +448,17 @@ export default function ConferenceOrganizingCommittee() {
                       <div className="col-md-10">
                         <div className="row">
                           {d[key].map((m, i) => (
-                            <div key={i} className="col-md-6 text-start mb-2">
-                              • {m}
-                            </div>
+                            <div key={i} className="col-md-6 text-start mb-2 d-flex align-items-start">
+  <span style={{display: "inline-flex", width: 18, height: 18, marginRight: 8, flex: "0 0 18px"}}>
+    <svg width="18" height="18" viewBox="0 0 40 40">
+      <polygon points="5,5 35,20 5,35 13,20" fill="#000" stroke="#000" strokeWidth="1"/>
+      <polygon points="5,5 35,20 13,20" fill="white" stroke="black" strokeWidth="1"/>
+    </svg>
+  </span>
+  <span>
+    {m}
+  </span>
+</div>
                           ))}
                         </div>
                       </div>

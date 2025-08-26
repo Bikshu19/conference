@@ -41,7 +41,7 @@ function HomepageComponents() {
             <div
               className="position-absolute top-0 start-0 w-100 h-100"
               style={{
-                background: "linear-gradient(to bottom, #0000000c, rgba(255, 255, 255, 0.67))",
+                background: "linear-gradient(to bottom, #0000000c, rgba(255, 255, 255, 0.31))",
                 pointerEvents: "none",
               }}
             />

@@ -10,7 +10,9 @@ function Aboutnri() {
     <div>
       <ScrollToTop />
       <Homenav />
-      <AboutCollege />
+      <div style={{margin:'0px'}}>
+        <AboutCollege />
+      </div>
       <AboutDepartment />
       <Footer />
     </div>

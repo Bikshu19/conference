@@ -161,7 +161,7 @@ const OurTeam = () => {
 
   return (
     <section
-      className="text-secondary bg-light py-5"
+      className="text-secondary bg-light py-2"
       style={{
         minHeight: "100vh",
         display: "flex",

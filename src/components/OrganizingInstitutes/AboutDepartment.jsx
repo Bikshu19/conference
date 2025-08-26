@@ -131,7 +131,7 @@ const AboutDepartment = () => {
             opacity: 1,
             transition: "opacity 0.3s ease",
             color: "#141E46",
-            marginBottom: "30px",
+            marginBottom: "0px",
             whiteSpace: "nowrap",
             overflow: "hidden",
           }}

@@ -9,7 +9,7 @@ function Aboutcon() {
     <div>
       <ScrollToTop />
       <Homenav />
-      <div style={{ margin: "90px" }}>
+      <div style={{ margin: "60px" }}>
         <AboutConference />
       </div>
 
