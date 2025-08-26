@@ -10,7 +10,7 @@ export default function AboutConference() {
 
   const content = {
     en: [
-      `The International Conference on Quantum AI and Deep-Tech Innovations
+      `3rd International Conference on Quantum AI and Deep-Tech Innovations
       for Next-Gen Intelligence (QUADNEXT-2026) is scheduled from 
       February 6–7, 2026 at NRI Institute of Technology, Agiripalli, Vijayawada, India.`,
       `This event brings together academicians, research scholars, industry professionals,
