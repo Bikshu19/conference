@@ -10,10 +10,13 @@ function contact() {
     <>
       <ScrollToTop />
       <Homenav />
+
       <div style={{ marginTop: "110px" }}>
+        <CustomerCare />
+      </div>
+      <div style={{ marginBottom: "20px" }}>
         <NriContact />
       </div>
-      <CustomerCare />
       <Footer />
     </>
   );

@@ -11,34 +11,6 @@ export default function Contact() {
   return (
     <>
       {/* Contact Details */}
-      <div className="container py-4 mb-0 text-center">
-        <h3 className="mb-4">FOR FURTHER INQUIRIES, PLEASE CONTACT:</h3>
-
-        <div>
-          <p className="mb-3 ">Conference Secretariat,</p>
-          <p className="mb-3">QUADNEXT-2026,</p>
-          <p className="mb-3">NRI Institute of Technology,</p>
-          <p className="mb-3">Pothavarappadu, Agiripalli Mandalam</p>
-          <p className="mb-3">Krishna District, Andhra Pradesh, India</p>
-          <p className="mb-3">
-            <strong>Email:</strong>{" "}
-            <a href="mailto:quadnext@nriit.edu.in">quadnext@nriit.edu.in </a>
-            <br></br>
-            <strong>Email:</strong>{" "}
-            <a href="mailto:kvsrao@nriit.edu.in">kvsrao@nriit.edu.in </a>
-          </p>
-          <p className="mb-3">
-            <strong>URL:</strong>{" "}
-            <a
-              href="http://www.nriit.edu.in/QUADNEXT"
-              target="_blank"
-              rel="noreferrer"
-            >
-              www.nriit.edu.in/QUADEXT
-            </a>
-          </p>
-        </div>
-      </div>
 
       {/* Map with Red Marker & Label */}
       <div style={{ width: "100%", height: "60vh", marginTop: 0 }}>
