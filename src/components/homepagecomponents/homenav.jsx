@@ -61,7 +61,64 @@ function Homenav() {
               justifyContent: "center",
               gap: "1rem",
             }}
+            
           >
+            {/* About */}
+            <li className="nav-item dropdown me-4">
+              <a
+                className="nav-link"
+                href="#"
+                role="button"
+                data-bs-toggle="dropdown"
+                style={getLinkStyle("about")}
+                onClick={() => handleClick("about")}
+              >
+                <span>About ▾</span>
+              </a>
+              <ul className="dropdown-menu text-center">
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutnri"
+                    style={getLinkStyle("aboutnri")}
+                    onClick={() => handleClick("aboutnri")}
+                  >
+                    <span>About NRIIT</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutpb"
+                    style={getLinkStyle("aboutpb")}
+                    onClick={() => handleClick("aboutpb")}
+                  >
+                    <span>About PBSC</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutcon"
+                    style={getLinkStyle("aboutcon")}
+                    onClick={() => handleClick("aboutcon")}
+                  >
+                    <span>About Conference</span>
+                  </Link>
+                </li>
+                <li>
+                  <Link
+                    className="dropdown-item"
+                    to="/aboutvij"
+                    style={getLinkStyle("aboutvij")}
+                    onClick={() => handleClick("aboutvij")}
+                  >
+                    <span>About Vijayawada</span>
+                  </Link>
+                </li>
+              </ul>
+            </li>
+
             {/* Conference Info */}
             <li className="nav-item dropdown me-4">
               <a
@@ -144,62 +201,7 @@ function Homenav() {
               </ul>
             </li>
 
-            {/* About */}
-            <li className="nav-item dropdown me-4">
-              <a
-                className="nav-link"
-                href="#"
-                role="button"
-                data-bs-toggle="dropdown"
-                style={getLinkStyle("about")}
-                onClick={() => handleClick("about")}
-              >
-                <span>About ▾</span>
-              </a>
-              <ul className="dropdown-menu text-center">
-                <li>
-                  <Link
-                    className="dropdown-item"
-                    to="/aboutnri"
-                    style={getLinkStyle("aboutnri")}
-                    onClick={() => handleClick("aboutnri")}
-                  >
-                    <span>About NRIIT</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item"
-                    to="/aboutpb"
-                    style={getLinkStyle("aboutpb")}
-                    onClick={() => handleClick("aboutpb")}
-                  >
-                    <span>About PB</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item"
-                    to="/aboutcon"
-                    style={getLinkStyle("aboutcon")}
-                    onClick={() => handleClick("aboutcon")}
-                  >
-                    <span>About Conference</span>
-                  </Link>
-                </li>
-                <li>
-                  <Link
-                    className="dropdown-item"
-                    to="/aboutvij"
-                    style={getLinkStyle("aboutvij")}
-                    onClick={() => handleClick("aboutvij")}
-                  >
-                    <span>About Vijayawada</span>
-                  </Link>
-                </li>
-              </ul>
-            </li>
-
+            
             {/* Accommodation */}
             <li className="nav-item me-4">
               <Link

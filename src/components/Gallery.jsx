@@ -3,7 +3,7 @@ import React, { useState, useEffect } from "react";
 function Gallery() {
   // 🔹 Add images for 1st conference here
   const firstConferenceImages = [
-   "/icraic2it-2-scaled.jpg",
+    "/icraic2it-2-scaled.jpg",
     "/icraic2it-3-scaled.jpg",
     "/icraic2it-4-scaled.jpg",
     "/icraic2it-6-scaled.jpg",
@@ -96,6 +96,7 @@ function Gallery() {
     // ... add all 2nd conference images
   ];
 
+  const [activeConference, setActiveConference] = useState(1); // 1 for first, 2 for second
   const [images1, setImages1] = useState([]);
   const [images2, setImages2] = useState([]);
 
@@ -104,74 +105,67 @@ function Gallery() {
     setImages2(secondConferenceImages);
   }, []);
 
+  const renderImages = (images, confNumber) => {
+    if (images.length === 0) {
+      return <p style={styles.empty}>No images to display.</p>;
+    }
+
+    return (
+      <div className="gallery-grid">
+        {images.map((src, idx) => (
+          <a
+            key={`conf${confNumber}-${idx}`}
+            href={src}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="gallery-card"
+          >
+            <img src={src} alt={`Conference ${confNumber} - ${idx + 1}`} loading="lazy" />
+          </a>
+        ))}
+      </div>
+    );
+  };
+
   return (
     <div style={styles.container}>
-      {/* 1st Conference */}
-      <h1 style={styles.title}>
-        1st International Conference on Recent Advancements and Innovations 
-        in Computing Communications and Information Technology
-        <span
-          style={{
-            display: "block",
-            fontSize: "1.5rem",
-            color: "#351992ff",
-            marginTop: "0.5rem",
-          }}
+      {/* Tabs */}
+      <div style={styles.tabs}>
+        <button
+          style={activeConference === 1 ? styles.activeTab : styles.tab}
+          onClick={() => setActiveConference(1)}
         >
-          📅 22-24 April 2022
-        </span>
-      </h1>
+          1st Conference
+        </button>
+        <button
+          style={activeConference === 2 ? styles.activeTab : styles.tab}
+          onClick={() => setActiveConference(2)}
+        >
+          2nd Conference
+        </button>
+      </div>
 
-      {images1.length === 0 ? (
-        <p style={styles.empty}>No images to display.</p>
-      ) : (
-        <div className="gallery-grid">
-          {images1.map((src, idx) => (
-            <a
-              key={`conf1-${idx}`}
-              href={src}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gallery-card"
-            >
-              <img src={src} alt={`Conference 1 - ${idx + 1}`} loading="lazy" />
-            </a>
-          ))}
-        </div>
+      {/* Conference Details */}
+      {activeConference === 1 && (
+        <>
+          <h1 style={styles.title}>
+            1st International Conference on Recent Advancements and Innovations 
+            in Computing Communications and Information Technology
+            <span style={styles.date}>📅 22-24 April 2022</span>
+          </h1>
+          {renderImages(images1, 1)}
+        </>
       )}
 
-      {/* 2nd Conference */}
-      <h1 style={styles.title}>
-        2nd International Conference on Recent Advancements and Innovations 
-        in Computing Communications and Information Technology
-        <span
-          style={{
-            display: "block",
-            fontSize: "1.5rem",
-            color: "#351992ff",
-            marginTop: "0.5rem",
-          }}
-        >
-          📅 2-3 May 2025
-        </span>
-      </h1>
-
-      {images2.length === 0 ? (
-        <p style={styles.empty}>No images to display.</p>
-      ) : (
-        <div className="gallery-grid">
-          {images2.map((src, idx) => (
-            <a
-              key={`conf2-${idx}`}
-              href={src}
-              target="_blank"
-              rel="noopener noreferrer"
-              className="gallery-card"
-            >
-              <img src={src} alt={`Conference 2 - ${idx + 1}`} loading="lazy" />
-            </a>
-          ))}
-        </div>
+      {activeConference === 2 && (
+        <>
+          <h1 style={styles.title}>
+            2nd International Conference on Recent Advancements and Innovations 
+            in Computing Communications and Information Technology
+            <span style={styles.date}>📅 2-3 May 2025</span>
+          </h1>
+          {renderImages(images2, 2)}
+        </>
       )}
 
       <style jsx>{`
@@ -227,9 +221,40 @@ const styles = {
     textAlign: "center",
     margin: "40px 0 20px",
   },
+  date: {
+    display: "block",
+    fontSize: "1.5rem",
+    color: "#351992ff",
+    marginTop: "0.5rem",
+  },
   empty: {
     textAlign: "center",
     color: "#666",
+  },
+  tabs: {
+    display: "flex",
+    justifyContent: "center",
+    gap: "20px",
+    marginBottom: "20px",
+  },
+  tab: {
+    padding: "10px 20px",
+    fontSize: "16px",
+    cursor: "pointer",
+    border: "1px solid #ccc",
+    borderRadius: "6px",
+    backgroundColor: "#f0f0f0",
+    transition: "all 0.3s",
+  },
+  activeTab: {
+    padding: "10px 20px",
+    fontSize: "16px",
+    cursor: "pointer",
+    border: "1px solid #2563eb",
+    borderRadius: "6px",
+    backgroundColor: "#2563eb",
+    color: "white",
+    fontWeight: "bold",
   },
 };
 
