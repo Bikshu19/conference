@@ -197,6 +197,17 @@ function Homenav() {
                 </li>
               </ul>
             </li>
+             {/* Registration */}
+            <li className="nav-item me-4">
+              <Link
+                className="nav-link"
+                to="/registration"
+                style={getLinkStyle("registration")}
+                onClick={() => handleClick("registration")}
+              >
+                <span>Registration</span>
+              </Link>
+            </li>
 
             {/* Accommodation */}
             <li className="nav-item me-4">
@@ -210,17 +221,7 @@ function Homenav() {
               </Link>
             </li>
 
-            {/* Registration */}
-            <li className="nav-item me-4">
-              <Link
-                className="nav-link"
-                to="/registration"
-                style={getLinkStyle("registration")}
-                onClick={() => handleClick("registration")}
-              >
-                <span>Registration</span>
-              </Link>
-            </li>
+           
 
             {/* Contact */}
             <li className="nav-item me-4">
