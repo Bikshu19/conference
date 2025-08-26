@@ -16,7 +16,7 @@ const PbDepartment = () => {
       style={{
         fontFamily: "'Poppins', sans-serif",
         color: "#141E46",
-        minHeight: "100vh",
+        minHeight: "10vh",
         overflowX: "hidden",
         width: "100vw",
         boxSizing: "border-box",
@@ -75,6 +75,7 @@ const PbDepartment = () => {
           whiteSpace: "pre-line",
           textAlign: "justify",
           borderRadius: "10px",
+        
         }}
       >
         <p>{language === "english" ? englishDescription : teluguDescription}</p>
