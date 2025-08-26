@@ -6,8 +6,8 @@ const AnimatedText = () => (
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 3 }}
- style={{'color':'#141E46','fontWeight':'bold'}}>
- Innovations <span style={{'color':'#141E46','fontWeight':'bold'}}>For</span>
+ style={{'color':'#ffee00ff','fontWeight':'bold',textShadow: '2px 2px 4px #000000'}}>
+ Innovations <span style={{'color':'#ffee00ff','fontWeight':'bold'}}>For</span>
   </motion.h1>
 );
 

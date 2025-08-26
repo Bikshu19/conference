@@ -6,10 +6,10 @@ const AnimatedText = () => (
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 3 }}
-   style={{'color':'#141E46','fontWeight':'bold'}}>
+   style={{'color':'#ffee00ff','fontWeight':'bold',textShadow: '2px 2px 4px #000000'}}>
 
 
- Next-Gen <span style={{'color':'#141E46','fontWeight':'bold'}} >Intelligence......!</span>
+ Next-Gen <span style={{'color':'#ffee00ff','fontWeight':'bold'}} >Intelligence......!</span>
   </motion.h1>
 );
 

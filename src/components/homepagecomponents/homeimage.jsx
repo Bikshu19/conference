@@ -59,16 +59,25 @@ function HomepageComponents() {
                 color: "white",
               }}
             >
-              <h1 className="fw-bold fs-1" style={{ color: '#141E46' }}>QUADNEXT-2026</h1>
-              <h2 className="fw-bold fs-1" style={{color:'#141E46'}}>International Conference</h2>
-              <h4 className="fw-bold" style={{color:'#141E46'}}>On</h4>
+             <h1 
+  className="fw-bold fs-1" 
+  style={{ 
+    color: '#ffee00ff',
+    textShadow: '2px 2px 4px #000000' // x-offset, y-offset, blur, color
+  }}
+>
+  QUADNEXT-2026
+</h1>
+
+              <h2 className="fw-bold fs-1" style={{color:'#ffee00ff',textShadow: '2px 2px 4px #000000'}}>International Conference</h2>
+              <h4 className="fw-bold" style={{color:'#ffee00ff',textShadow: '2px 2px 4px #000000'}}>On</h4>
               <Hometext />
               <Hometext1 />
               <Hometext2 />
-              <p className="lead " style={{ color: '#ff0000ff' ,'fontWeight': 'bold','whiteSpace': 'nowrap'}}>
+              <p className="lead " style={{ color: '#ff0000ff' ,'fontWeight': 'bold','whiteSpace': 'nowrap',textShadow: '2px 2px 4px #000000'}}>
                 — Sponsored by AICTE,New Delhi
               </p>
-              <p className="lead " style={{ color: '#ff0000ff' ,'fontWeight': 'bold','whiteSpace': 'nowrap'}}>
+              <p className="lead " style={{ color: '#ff0000ff' ,'fontWeight': 'bold','whiteSpace': 'nowrap',textShadow: '2px 2px 4px #000000'}}>
                 Under VAANI Scheme —
               </p>
 

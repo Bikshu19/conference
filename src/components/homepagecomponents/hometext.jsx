@@ -6,9 +6,9 @@ const AnimatedText = () => (
     initial={{ opacity: 0, y: -50 }}
     animate={{ opacity: 1, y: 0 }}
     transition={{ duration: 3 }}
-    style={{'color':'#141E46','fontWeight':'bold'}}
+    style={{'color':'#ffee00ff','fontWeight':'bold',textShadow: '2px 2px 4px #000000'}}
   >
-Quantum AI <span style={{'color':'#141E46','fontWeight':'bold'}}>And</span>  Deep-<span style={{'color':'#141E46','fontWeight':'bold'}}>Tech</span>
+Quantum AI <span style={{'color':'#ffee00ff','fontWeight':'bold'}}>And</span>  Deep-<span style={{'color':'#ffee00ff','fontWeight':'bold'}}>Tech</span>
   </motion.h1>
 );
 
