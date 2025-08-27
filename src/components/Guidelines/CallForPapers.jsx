@@ -1,8 +1,13 @@
 import React, { useState } from "react";
+<<<<<<< HEAD
 import { FaArrowDown } from "react-icons/fa";
 
 // ---------- First Section (Call for Papers) ----------
 const ProductDetail = () => {
+=======
+
+export default function ProductDetail() {
+>>>>>>> ec919c86e832dddb708358dc33106f268bd420d5
   const [isTelugu, setIsTelugu] = useState(false);
 
   const englishText = `
@@ -28,6 +33,7 @@ const ProductDetail = () => {
   `;
 
   return (
+<<<<<<< HEAD
     <div className="mt-4">
       {" "}
       {/* ✅ This moves Call for Papers content down */}
@@ -196,11 +202,67 @@ const CallForPapersPage = () => {
           </div>
           <div className="col-12 col-lg-6">
             <PaperSubmissionGuidelines />
+=======
+    <section className="py-5">
+      <div className="container">
+        <div className="row g-5 align-items-center">
+          {/* Product Image */}
+          <div className="col-lg-6 text-center">
+            <img
+              src="./conferencetopicspics/papers.jpg"
+              alt="product"
+              className="img-fluid rounded shadow"
+              style={{ maxHeight: "350px", objectFit: "cover" }}
+            />
+          </div>
+
+          {/* Product Info */}
+          <div className="col-lg-6">
+            {/* Heading */}
+            <h1 className="display-5 fw-bold mb-3" style={{ color: "#141E46" }}>
+              Call for Papers
+            </h1>
+
+            {/* Language Toggle Button - under heading */}
+            <div className="mb-3">
+              <button
+                className="btn btn-secondary btn-sm"
+                onClick={() => setIsTelugu(!isTelugu)}
+                style={{
+                  borderRadius: '20px',
+                  backgroundColor: isTelugu ? 'green' : 'red',
+                  border: 'none'
+                }}
+              >
+                {isTelugu ? "English" : "తెలుగు"}
+              </button>
+            </div>
+
+            {/* Ratings */}
+            <div className="d-flex align-items-center mb-4">
+              <div className="text-warning fs-5 me-2">
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star-fill"></i>
+                <i className="bi bi-star"></i>
+              </div>
+            </div>
+
+            {/* Description */}
+            <p className="text-muted lh-lg">{isTelugu ? teluguText : englishText}</p>
+
+            {/* CTA Button */}
+>>>>>>> ec919c86e832dddb708358dc33106f268bd420d5
           </div>
         </div>
       </div>
     </section>
   );
+<<<<<<< HEAD
 };
 
 export default CallForPapersPage;
+=======
+}
+>>>>>>> ec919c86e832dddb708358dc33106f268bd420d5
